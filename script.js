@@ -1,9 +1,5 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const visualLayer = document.createElement('link');
-visualLayer.rel = 'stylesheet';
-visualLayer.href = 'v3.css';
-document.head.appendChild(visualLayer);
 
 const hero = document.querySelector('.hero');
 if (hero && !document.querySelector('.hero-console')) {
