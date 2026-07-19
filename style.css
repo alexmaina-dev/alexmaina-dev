@@ -4,15 +4,17 @@
    ========================================================================== */
 
 :root {
-  --bg-color: #07110f;
-  --text-color: #edf5f0;
-  --accent-color: #cbff45;
-  --muted-color: #a1afa9;
-  --line-color: rgba(237, 245, 240, 0.18);
-  --header-bg: rgba(7, 17, 15, 0.72);
-  --panel-bg: rgba(7, 17, 15, 0.5);
+  --bg-color: #030712;
+  --text-color: #f8fafc;
+  --accent-color: #06b6d4;
+  --accent-glow: #8b5cf6;
+  --muted-color: #94a3b8;
+  --line-color: rgba(255, 255, 255, 0.08);
+  --header-bg: rgba(3, 7, 18, 0.65);
+  --panel-bg: rgba(255, 255, 255, 0.03);
   
-  --font-sans: "DM Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Outfit", sans-serif;
   --font-mono: "DM Mono", monospace;
   --font-serif: "Playfair Display", serif;
 }
@@ -39,8 +41,8 @@ body::before {
   position: fixed;
   z-index: -2;
   inset: 0;
-  background: radial-gradient(circle at 12% 12%, #174331 0, transparent 26rem),
-              radial-gradient(circle at 90% 55%, #142b54 0, transparent 35rem),
+  background: radial-gradient(circle at 12% 12%, #1e1b4b 0, transparent 35rem),
+              radial-gradient(circle at 90% 55%, #0f172a 0, transparent 40rem),
               var(--bg-color);
 }
 
@@ -132,10 +134,10 @@ a {
 }
 
 .wordmark {
-  font: 700 2rem/1 var(--font-mono);
-  letter-spacing: -0.27em;
-  color: var(--accent-color);
-  text-shadow: 0 0 25px rgba(203, 255, 69, 0.6);
+  font: 700 2.2rem/1 var(--font-heading);
+  letter-spacing: -0.05em;
+  color: #fff;
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
 }
 
 nav {
@@ -231,12 +233,13 @@ nav a:hover {
 .hero h1 {
   max-width: 1150px;
   margin: 0;
+  font-family: var(--font-heading);
   font-size: clamp(3.9rem, 8.6vw, 8.7rem);
-  line-height: 0.91;
-  letter-spacing: -0.075em;
-  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 700;
   text-wrap: balance;
-  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.13);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
@@ -263,10 +266,12 @@ nav a:hover {
 .hero h1 em {
   font-family: var(--font-serif);
   font-weight: 600;
-  letter-spacing: -0.07em;
-  color: var(--accent-color);
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-style: italic;
-  text-shadow: 0 0 40px rgba(203, 255, 69, 0.21);
+  text-shadow: none;
 }
 
 .hero-bottom {
@@ -354,10 +359,10 @@ nav a:hover {
 .hero-glow.glow-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #cbff45, transparent 70%);
+  background: radial-gradient(circle, #38bdf8, transparent 70%);
   top: 10%;
   right: 20%;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .hero-glow.glow-2 {
@@ -586,10 +591,14 @@ nav a:hover {
   min-height: 390px;
   overflow: hidden;
   color: var(--bg-color);
-  border: 1px solid rgba(237, 245, 240, 0.19);
-  border-radius: 14px;
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.19);
-  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s;
+  border: 1px solid var(--line-color);
+  border-radius: 18px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.project-visual:hover {
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .project-visual::after {
@@ -764,10 +773,11 @@ nav a:hover {
 }
 
 .project-meta h2 {
-  font-size: 1.3rem;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
   margin: 0;
   font-weight: 600;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
 }
 
 .project-meta p {
@@ -842,8 +852,9 @@ nav a:hover {
 .about h2 {
   max-width: 700px;
   margin: 0;
+  font-family: var(--font-heading);
   font-size: clamp(2.7rem, 5.2vw, 5.7rem);
-  letter-spacing: -0.065em;
+  letter-spacing: -0.04em;
   line-height: 0.95;
   font-weight: 600;
   color: #f5f9f6;
@@ -933,10 +944,11 @@ nav a:hover {
 
 .contact h2 {
   margin: 47px 0 55px;
+  font-family: var(--font-heading);
   font-size: clamp(4rem, 9.5vw, 10rem);
-  letter-spacing: -0.08em;
-  line-height: 0.79;
-  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  font-weight: 700;
   position: relative;
 }
 
