@@ -14,7 +14,7 @@
 ## Core Technical Projects
 - [HP Fortress Hybrid Server](https://mainadev.me/#work): Debian 13 Trixie, Proxmox/Docker virtualization, redundant ZFS storage pool, WireGuard mesh, and reverse proxying with automated SSL.
 - [RBAC Security Console](https://mainadev.me/#work): Role-based access control auditing and Entra ID governance tool implementing Least Privilege principles.
-- [Portfolio V3 Jamstack](https://mainadev.me/#work): High-performance, zero-latency static architecture optimized for 100/100 Core Web Vitals and autonomous AI agent discovery.
+- [Officina Control Tower](https://mainadev.me/#work): Automotive workflow tracker and fleet operations platform built with Next.js, TypeScript, and SQLite.
 
 ## In-Depth Documentation Hub (Italian)
 All comprehensive sysadmin, cloud architecture, and networking guides are hosted on the primary Italian knowledge base:
