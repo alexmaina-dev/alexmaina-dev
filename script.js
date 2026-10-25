@@ -27,3 +27,9 @@ revealItems.forEach((item) => {
   item.classList.add('reveal');
   observer.observe(item);
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
