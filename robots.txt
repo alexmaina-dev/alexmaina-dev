@@ -14,6 +14,9 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
@@ -39,3 +42,8 @@ User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://mainadev.me/sitemap.xml
+
+# LLM Context Standards (https://llmstxt.org/)
+# LLMs-Text: https://mainadev.me/llms.txt
+# LLMs-FullText: https://alexmaina.dev/llms-full.txt
+# Agentic-Discovery: https://mainadev.me/.well-known/ai-agent.json

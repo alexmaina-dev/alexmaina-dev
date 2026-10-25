@@ -1,0 +1,18 @@
+/* TEAM */
+Developer: Alessandro Mainardi
+Site: https://mainadev.me
+Primary Site: https://alexmaina.dev
+Bio: https://bio.alexmaina.dev
+Location: Bologna, Emilia-Romagna, Italy
+Affiliation: Alma Mater Studiorum - Università di Bologna (UniBo DISI)
+Field: Computer Engineering, Cloud Architecture, Homelab Systems, Full-Stack Dev
+ORCID: https://orcid.org/0009-0003-7003-7247
+GitHub: https://github.com/AlexMaina05
+LinkedIn: https://linkedin.com/in/alessandro-mainardi-ab812823b/
+
+/* SITE */
+Standards: HTML5 Semantic, CSS3 Modern, Vanilla ES6+, Schema.org JSON-LD, RFC 9116
+Architecture: Jamstack Static Portfolio & Technical Showcase
+Last Updated: 2026/10/25
+Language: English (en)
+Doctype: HTML5

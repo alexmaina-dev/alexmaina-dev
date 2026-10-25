@@ -1,0 +1,21 @@
+{
+  "name": "Alessandro Mainardi \u2014 Portfolio",
+  "short_name": "MainaDev",
+  "description": "Official English portfolio of Alessandro Mainardi: Software developer & Computer Engineering student at UniBo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
