@@ -239,68 +239,133 @@
         </div>
       </section>
 
-      <!-- Work Section -->
+            <!-- Work Section -->
       <section class="work section" id="work">
         <div class="section-intro">
-          <p class="eyebrow">Featured Engineering Projects</p>
-          <p>Production-grade homelab infrastructures, enterprise cloud identity governance, and modern web applications.</p>
+          <p class="eyebrow"><span class="live-dot"></span> Engineering Showcase</p>
+          <h2>Production Systems & Architectures</h2>
+          <p>A selection of production-grade hybrid infrastructures, enterprise identity tooling, and distributed web applications.</p>
         </div>
         <div class="project-grid">
-          <!-- Featured Project: HP Fortress -->
-          <article class="project project-featured">
-            <a href="https://github.com/AlexMaina05" target="_blank" rel="noopener noreferrer" class="project-visual visual-aurora" aria-label="HP Fortress Hybrid Infrastructure Server">
+          <!-- Featured Bento Hero: HP Fortress -->
+          <article class="project-card project-card-featured">
+            <div class="project-media">
               <img src="assets/images/homelab.webp" alt="HP Fortress Server Infrastructure Architecture" width="1200" height="600" loading="eager" decoding="async" />
-              <div class="project-visual-overlay"></div>
-              <span class="visual-label">01 / Infrastructure & Homelab</span>
-              <span class="visual-arrow">↗</span>
-            </a>
-            <div class="project-meta">
-              <h2>HP Fortress — Hybrid Infrastructure Server</h2>
-              <p>Debian 13 · Proxmox / Docker · ZFS Pool · WireGuard Mesh</p>
+              <div class="project-media-overlay"></div>
+              <span class="project-badge"><span class="status-dot"></span> 01 / Infrastructure & Homelab</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">HP Fortress — Hybrid Infrastructure Server</h3>
+              </div>
+              <p class="project-desc">24/7 enterprise hybrid server running Debian 13 Trixie, Proxmox/Docker virtualization, redundant ZFS storage pool, WireGuard mesh, and Cloudflare Zero-Trust tunnels.</p>
+              <div class="project-tags">
+                <span>Debian 13</span>
+                <span>Docker</span>
+                <span>ZFS Pool</span>
+                <span>WireGuard Mesh</span>
+                <span>Zero-Trust</span>
+                <span>Nginx Reverse Proxy</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://alexmaina.dev/hp-fortress-homelab/" target="_blank" rel="noopener" class="project-link-primary">
+                  Architecture Specs ↗
+                </a>
+                <a href="https://github.com/AlexMaina05/hp-fortress-homelab" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                  Source Code ↗
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Project 2: RBAC Security Console -->
-          <article class="project">
-            <a href="https://github.com/AlexMaina05" target="_blank" rel="noopener noreferrer" class="project-visual visual-grid" aria-label="RBAC Security Console & Entra ID Governance">
+          <article class="project-card">
+            <div class="project-media">
               <img src="assets/images/rbac-console.webp" alt="RBAC Console UI and Auditing Metrics" width="600" height="400" loading="lazy" decoding="async" />
-              <div class="project-visual-overlay"></div>
-              <span class="visual-label">02 / Cloud & Identity Governance</span>
-              <span class="visual-arrow">↗</span>
-            </a>
-            <div class="project-meta">
-              <h2>RBAC Security Console</h2>
-              <p>Microsoft Entra ID · Least Privilege · OAuth2 / OIDC</p>
+              <div class="project-media-overlay"></div>
+              <span class="project-badge">02 / Cloud & IAM</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">RBAC Security Console</h3>
+              </div>
+              <p class="project-desc">Role-based access control and automated identity governance platform for Microsoft 365 & Entra ID tenants, enforcing least-privilege auditing and compliance.</p>
+              <div class="project-tags">
+                <span>Entra ID</span>
+                <span>Least Privilege</span>
+                <span>OAuth2 / OIDC</span>
+                <span>TypeScript</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/AlexMaina05/rbac-console" target="_blank" rel="noopener noreferrer" class="project-link-primary">
+                  View on GitHub ↗
+                </a>
+                <a href="https://alexmaina.dev/ms365/" target="_blank" rel="noopener" class="project-link-secondary">
+                  IAM Guide ↗
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Project 3: Comande WebApp -->
-          <article class="project">
-            <a href="https://github.com/AlexMaina05" target="_blank" rel="noopener noreferrer" class="project-visual visual-type" aria-label="Comande WebApp Real-Time Order Management">
-              <img src="assets/images/comande.webp" alt="Comande WebApp Kitchen and Hall Real-time Interface" width="600" height="400" loading="lazy" decoding="async" />
-              <div class="project-visual-overlay"></div>
-              <span class="visual-label">03 / Distributed Application</span>
-              <span class="visual-arrow">↗</span>
-            </a>
-            <div class="project-meta">
-              <h2>Comande WebApp</h2>
-              <p>Progressive Web App · Offline-First · Local Sync</p>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/comande.webp" alt="Comande WebApp Real-time Kitchen Interface" width="600" height="400" loading="lazy" decoding="async" />
+              <div class="project-media-overlay"></div>
+              <span class="project-badge">03 / Distributed App</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Comande WebApp</h3>
+              </div>
+              <p class="project-desc">High-speed Progressive Web App engineered for restaurant and catering workflows with offline-first synchronization, local SQLite caching, and kitchen dispatch.</p>
+              <div class="project-tags">
+                <span>Progressive Web App</span>
+                <span>Offline-First</span>
+                <span>Local Sync</span>
+                <span>WebSockets</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/AlexMaina05/comande" target="_blank" rel="noopener noreferrer" class="project-link-primary">
+                  View on GitHub ↗
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Project 4: Jamstack Portfolio V3 -->
-          <article class="project project-featured">
-            <a href="https://alexmaina.dev/" target="_blank" rel="noopener" class="project-visual visual-aurora" aria-label="Portfolio V3 Jamstack Architecture on alexmaina.dev">
-              <img src="assets/images/og-preview.webp" alt="Portfolio V3 Next-Gen Jamstack Architecture" width="1200" height="600" loading="lazy" decoding="async" />
-              <div class="project-visual-overlay"></div>
-              <span class="visual-label">04 / Performance & AEO Optimization</span>
-              <span class="visual-arrow">↗</span>
-            </a>
-            <div class="project-meta">
-              <h2>Portfolio V3 Jamstack Architecture</h2>
-              <p>100/100 Core Web Vitals · Schema Graph · Autonomous AI Agent Discovery</p>
+          <!-- Project 4: Officina Control Tower -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/images/og-preview.webp" alt="Officina Control Tower Workflow Platform" width="600" height="400" loading="lazy" decoding="async" />
+              <div class="project-media-overlay"></div>
+              <span class="project-badge">04 / Automotive Ops</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Officina Control Tower</h3>
+              </div>
+              <p class="project-desc">Real-time automotive operations management and fleet vehicle workflow platform featuring interactive job tracking, inventory parts control, and analytics.</p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>SQLite</span>
+                <span>TailwindCSS</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/AlexMaina05/auto-se" target="_blank" rel="noopener noreferrer" class="project-link-primary">
+                  View on GitHub ↗
+                </a>
+              </div>
             </div>
           </article>
+
+          <!-- Open-Source Repositories Strip -->
+          <div class="project-repo-strip">
+            <p>Looking for more engineering repositories? Explore PII Redactor Lite, 3D Parametric CAD, and open-source tooling on GitHub.</p>
+            <a href="https://github.com/AlexMaina05?tab=repositories" target="_blank" rel="noopener noreferrer">
+              Browse All Repositories on GitHub <span>↗</span>
+            </a>
+          </div>
         </div>
       </section>
 

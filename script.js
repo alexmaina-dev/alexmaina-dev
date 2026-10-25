@@ -13,7 +13,7 @@ if (hero && !document.querySelector('.hero-console')) {
   </aside>`);
 }
 
-const revealItems = document.querySelectorAll('.project, .doc-card, .about-grid, .contact > *');
+const revealItems = document.querySelectorAll('.project-card, .doc-card, .about-grid, .contact > *');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
