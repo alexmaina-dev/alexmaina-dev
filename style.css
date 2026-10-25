@@ -154,19 +154,39 @@ nav a:hover {
   padding: 6px 12px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  transition: background 0.2s;
+  transition: background 0.2s, border-color 0.2s;
 }
 
 .availability:hover {
   background: var(--bg-panel);
+  border-color: var(--border-hover);
 }
 
-.availability span {
+.availability span,
+.live-dot,
+.project-badge .status-dot {
   width: 6px;
   height: 6px;
-  display: block;
-  background: #10b981; /* Precise status green */
+  display: inline-block;
+  background: #10b981;
   border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: statusPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes statusPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.75);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
 }
 
 /* ==========================================================================
@@ -364,20 +384,24 @@ nav a:hover {
 }
 
 .project-card {
-  background: var(--bg-panel);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 100%), var(--bg-panel);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
   position: relative;
 }
 
 .project-card:hover {
-  border-color: rgba(56, 189, 248, 0.4);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.65), 0 0 24px -4px rgba(56, 189, 248, 0.15);
+}
+
+.project-card:active {
+  transform: translateY(-1px) scale(0.995);
 }
 
 .project-media {
@@ -713,16 +737,31 @@ nav a:hover {
 }
 
 .about li {
-  padding: 1rem 0;
+  padding: 1.15rem 0.5rem;
   border-bottom: 1px solid var(--border-color);
   font: 400 0.9rem var(--font-mono);
   color: var(--text-muted);
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.25rem;
+  transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  border-radius: 4px;
+}
+
+.about li:hover {
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.02);
+  transform: translateX(4px);
 }
 
 .about li span {
-  color: var(--text-color);
+  color: #38bdf8;
+  font-weight: 600;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  font-size: 0.78rem;
 }
 
 /* ==========================================================================
