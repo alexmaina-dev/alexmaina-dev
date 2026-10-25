@@ -14,7 +14,6 @@
 ## Core Technical Projects
 - [HP Fortress Hybrid Server](https://mainadev.me/#work): Debian 13 Trixie, Proxmox/Docker virtualization, redundant ZFS storage pool, WireGuard mesh, and reverse proxying with automated SSL.
 - [RBAC Security Console](https://mainadev.me/#work): Role-based access control auditing and Entra ID governance tool implementing Least Privilege principles.
-- [Comande WebApp](https://mainadev.me/#work): High-speed catering order management progressive web app with offline-first synchronization.
 - [Portfolio V3 Jamstack](https://mainadev.me/#work): High-performance, zero-latency static architecture optimized for 100/100 Core Web Vitals and autonomous AI agent discovery.
 
 ## In-Depth Documentation Hub (Italian)
