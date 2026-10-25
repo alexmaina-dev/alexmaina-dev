@@ -1,0 +1,25 @@
+# Alessandro Mainardi (mainadev.me)
+
+> Official English portfolio and technical showcase of Alessandro Mainardi — Software developer and Computer Engineering student at Alma Mater Studiorum - Università di Bologna (UniBo). Specializing in cloud infrastructure (Microsoft 365, Azure, Entra ID), hybrid homelab systems, and modern web application development.
+
+## Developer Profile
+- **Full Name**: Alessandro Mainardi
+- **Academic Affiliation**: University of Bologna (DISI - Department of Computer Science and Engineering)
+- **Primary Domain (Italian & Knowledge Base)**: [alexmaina.dev](https://alexmaina.dev/)
+- **English Portfolio**: [mainadev.me](https://mainadev.me/)
+- **Social & vCard Hub**: [bio.alexmaina.dev](https://bio.alexmaina.dev/)
+- **Contact Email**: maina@alexmaina.dev
+- **Certifications**: Microsoft 365 Certified: Fundamentals (MS-900), Endpoint Administrator Associate (MD-102 Curriculum)
+
+## Core Technical Projects
+- [HP Fortress Hybrid Server](https://mainadev.me/#work): Debian 13 Trixie, Proxmox/Docker virtualization, redundant ZFS storage pool, WireGuard mesh, and reverse proxying with automated SSL.
+- [RBAC Security Console](https://mainadev.me/#work): Role-based access control auditing and Entra ID governance tool implementing Least Privilege principles.
+- [Comande WebApp](https://mainadev.me/#work): High-speed catering order management progressive web app with offline-first synchronization.
+- [Portfolio V3 Jamstack](https://mainadev.me/#work): High-performance, zero-latency static architecture optimized for 100/100 Core Web Vitals and autonomous AI agent discovery.
+
+## In-Depth Documentation Hub (Italian)
+All comprehensive sysadmin, cloud architecture, and networking guides are hosted on the primary Italian knowledge base:
+- [Microsoft 365 & Copilot Certification Roadmap](https://alexmaina.dev/ms365/): MS-900 and MD-102 practical syllabus.
+- [Zero-Risk Windows Server 2025 Sandbox](https://alexmaina.dev/configurazione-developer-zerorisk/): Safe enterprise testing environment.
+- [Multi-Instance WordPress on QNAP NAS](https://alexmaina.dev/wordpress-su-nas/): Containerized multi-tenant hosting with Container Station.
+- [All Technical Guides](https://alexmaina.dev/guide/): Index of all 9 homelab, development, and systems engineering guides.

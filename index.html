@@ -1,34 +1,214 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio di Alessandro Mainardi — software developer e studente di Ingegneria Informatica." />
-    <meta name="theme-color" content="#101314" />
-    <title>Alessandro Mainardi — Software developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <title>Alessandro Mainardi | Software Developer & Cloud Systems</title>
+    <meta name="description" content="Official portfolio of Alessandro Mainardi: Software developer & Computer Engineering student at UniBo. Specialized in Microsoft 365, Azure Cloud, and Hybrid Homelab architectures." />
+    <meta name="author" content="Alessandro Mainardi" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Canonical & Bidirectional hreflang -->
+    <link rel="canonical" href="https://mainadev.me/" />
+    <link rel="alternate" hreflang="en" href="https://mainadev.me/" />
+    <link rel="alternate" hreflang="it" href="https://alexmaina.dev/" />
+    <link rel="alternate" hreflang="x-default" href="https://alexmaina.dev/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Alessandro Mainardi (English Portfolio)" />
+    <meta property="og:title" content="Alessandro Mainardi | Software Developer & Cloud Systems" />
+    <meta property="og:description" content="Software developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna. Specialized in cloud infrastructure, Microsoft 365, and hybrid systems." />
+    <meta property="og:url" content="https://mainadev.me/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:image" content="https://mainadev.me/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Alex_Maina_" />
+    <meta name="twitter:creator" content="@Alex_Maina_" />
+    <meta name="twitter:title" content="Alessandro Mainardi | Software Developer & Cloud Systems" />
+    <meta name="twitter:description" content="Software developer and Computer Engineering student at UniBo. Specialized in cloud infrastructure, Microsoft 365, and hybrid systems." />
+    <meta name="twitter:image" content="https://mainadev.me/assets/images/og-preview.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <link rel="apple-touch-icon" href="/assets/images/icon-192.png" />
+
+    <!-- Preload Self-Hosted Fonts -->
+    <link rel="preload" href="assets/fonts/plusjakartasans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin />
+
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://mainadev.me/#website",
+          "url": "https://mainadev.me/",
+          "name": "Alessandro Mainardi — Software Developer & Cloud Systems",
+          "description": "Official English portfolio of Alessandro Mainardi: Software developer, Computer Engineering student at UniBo, and cloud systems builder.",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://alexmaina.dev/#person"
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://mainadev.me/#profilepage",
+          "url": "https://mainadev.me/",
+          "name": "Alessandro Mainardi — English Portfolio & Technical Showcase",
+          "isPartOf": {
+            "@id": "https://mainadev.me/#website"
+          },
+          "inLanguage": "en-US",
+          "mainEntity": {
+            "@id": "https://alexmaina.dev/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://alexmaina.dev/#person",
+          "name": "Alessandro Mainardi",
+          "phoneticName": "/ales'sandro mai'nardi/",
+          "url": "https://alexmaina.dev/",
+          "email": "mailto:maina@alexmaina.dev",
+          "image": "https://bio.alexmaina.dev/assets/images/profile.webp",
+          "jobTitle": "Software Developer & Computer Engineering Student",
+          "description": "Software developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna (UniBo DISI), specializing in Microsoft 365 & Azure cloud architectures, hybrid server infrastructure, and full-stack development.",
+          "homeLocation": {
+            "@type": "Place",
+            "name": "Bologna, Italy",
+            "sameAs": "https://www.wikidata.org/wiki/Q1891"
+          },
+          "nationality": {
+            "@type": "Country",
+            "name": "Italy",
+            "sameAs": "https://www.wikidata.org/wiki/Q38"
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Alma Mater Studiorum - Università di Bologna",
+            "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
+            "url": "https://www.unibo.it/",
+            "sameAs": [
+              "https://en.wikipedia.org/wiki/University_of_Bologna",
+              "https://www.wikidata.org/wiki/Q131262",
+              "https://www.wikidata.org/wiki/Q115783307"
+            ]
+          },
+          "affiliation": {
+            "@type": "EducationalOrganization",
+            "name": "Alma Mater Studiorum - Università di Bologna",
+            "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
+            "url": "https://www.unibo.it/",
+            "sameAs": [
+              "https://en.wikipedia.org/wiki/University_of_Bologna",
+              "https://www.wikidata.org/wiki/Q131262",
+              "https://www.wikidata.org/wiki/Q115783307"
+            ]
+          },
+          "knowsAbout": [
+            "https://www.wikidata.org/wiki/Q29124",
+            "https://www.wikidata.org/wiki/Q1462057",
+            "Computer Engineering",
+            "Cloud Architecture",
+            "Microsoft 365",
+            "Azure Entra ID",
+            "Homelab Systems",
+            "Network Engineering",
+            "Full-Stack Development",
+            "Python",
+            "Docker"
+          ],
+          "knowsLanguage": [
+            {
+              "@type": "Language",
+              "name": "English",
+              "alternateName": "en"
+            },
+            {
+              "@type": "Language",
+              "name": "Italian",
+              "alternateName": "it"
+            }
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Microsoft 365 Certified: Fundamentals (MS-900)",
+              "credentialCategory": "certification",
+              "url": "https://learn.microsoft.com/certifications/exams/ms-900/",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Microsoft",
+                "url": "https://www.microsoft.com/"
+              }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Microsoft Certified: Endpoint Administrator Associate (MD-102 Curriculum)",
+              "credentialCategory": "certification",
+              "url": "https://learn.microsoft.com/certifications/exams/md-102/",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Microsoft",
+                "url": "https://www.microsoft.com/"
+              }
+            }
+          ],
+          "sameAs": [
+            "https://alexmaina.dev/",
+            "https://bio.alexmaina.dev/",
+            "https://mainadev.me/",
+            "https://github.com/AlexMaina05",
+            "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
+            "https://x.com/Alex_Maina_",
+            "https://www.instagram.com/_alessandro_mainardi_/",
+            "https://www.youtube.com/@Alex_Maina",
+            "https://orcid.org/0009-0003-7003-7247"
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Alessandro Mainardi, torna all'inizio">a.</a>
-      <nav aria-label="Navigazione principale"><a href="#work">Progetti</a><a href="#about">Profilo</a><a href="#contact">Contatti</a></nav>
-      <a class="availability" href="mailto:maina@alexmaina.dev"><span></span> Disponibile</a>
+      <a class="wordmark" href="#top" aria-label="Alessandro Mainardi, back to top">a.</a>
+      <nav aria-label="Main Navigation">
+        <a href="#work">Projects</a>
+        <a href="#docs">Knowledge Base</a>
+        <a href="#about">Profile</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="availability" href="mailto:maina@alexmaina.dev"><span></span> Available</a>
     </header>
+
     <main id="top">
+      <!-- Hero Section -->
       <section class="hero section">
-        <p class="eyebrow"><span class="live-dot"></span> Portfolio / 2026</p>
+        <p class="eyebrow"><span class="live-dot"></span> Portfolio / 2026 · Bologna, Italy</p>
         <div class="hero-copy">
-          <h1>Scrivo codice per idee <span>che crescono.</span></h1>
+          <h1>Engineering software for ideas <span>that scale.</span></h1>
           <div class="hero-bottom">
-            <p>Software developer e studente di Ingegneria Informatica. Esploro il web, il cloud e tutto ciò che rende utile un prodotto digitale.</p>
+            <p>Software developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna. Exploring full-stack engineering, cloud architectures, and resilient hybrid systems.</p>
             <div class="hero-explore">
               <span>SCROLL TO EXPLORE &darr;</span>
-              <a class="round-link" href="#work" aria-label="Scopri i progetti"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" /></svg></a>
+              <a class="round-link" href="#work" aria-label="Explore featured projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" /></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -38,42 +218,181 @@
           <div class="hero-orbit">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path id="circlePath" d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" fill="none" />
-              <text><textPath href="#circlePath" startOffset="0%">CODE · DESIGN · BUILD · CODE · DESIGN · BUILD · </textPath></text>
+              <text><textPath href="#circlePath" startOffset="0%">CODE · DESIGN · BUILD · CLOUD · SYSTEMS · CODE · </textPath></text>
             </svg>
           </div>
         </div>
       </section>
-      <section class="ticker" aria-label="Competenze"><div class="ticker-track"><span>Web development</span><i>✦</i><span>Cloud & DevOps</span><i>✦</i><span>Algorithms</span><i>✦</i><span>Web development</span><i>✦</i><span>Cloud & DevOps</span><i>✦</i><span>Algorithms</span><i>✦</i></div></section>
+
+      <!-- Competency Ticker -->
+      <section class="ticker" aria-label="Core Competencies">
+        <div class="ticker-track">
+          <span>Cloud Architectures</span><i>✦</i>
+          <span>Hybrid Homelab</span><i>✦</i>
+          <span>Microsoft 365 & Entra ID</span><i>✦</i>
+          <span>Full-Stack Engineering</span><i>✦</i>
+          <span>Zero-Trust Security</span><i>✦</i>
+          <span>Python & Docker</span><i>✦</i>
+          <span>Cloud Architectures</span><i>✦</i>
+          <span>Hybrid Homelab</span><i>✦</i>
+          <span>Microsoft 365 & Entra ID</span><i>✦</i>
+        </div>
+      </section>
+
+      <!-- Work Section -->
       <section class="work section" id="work">
-        <div class="section-intro"><p class="eyebrow">Progetti in evidenza</p><p>Spazio per raccogliere app, esperimenti e progetti open source: ogni card è pronta per essere sostituita con un progetto reale.</p></div>
+        <div class="section-intro">
+          <p class="eyebrow">Featured Engineering Projects</p>
+          <p>Production-grade homelab infrastructures, enterprise cloud identity governance, and modern web applications.</p>
+        </div>
         <div class="project-grid">
+          <!-- Featured Project: HP Fortress -->
           <article class="project project-featured">
-            <a href="https://github.com/AlexMaina05" class="project-visual visual-aurora" aria-label="Apri GitHub di Alessandro Mainardi">
-              <span class="visual-label">01 / open source</span>
+            <a href="https://github.com/AlexMaina05" target="_blank" rel="noopener noreferrer" class="project-visual visual-aurora" aria-label="HP Fortress Hybrid Infrastructure Server">
+              <img src="assets/images/homelab.webp" alt="HP Fortress Server Infrastructure Architecture" width="1200" height="600" loading="eager" decoding="async" />
+              <div class="project-visual-overlay"></div>
+              <span class="visual-label">01 / Infrastructure & Homelab</span>
               <span class="visual-arrow">↗</span>
             </a>
-            <div class="project-meta"><h2>Il prossimo progetto</h2><p>Repository · Tecnologie · Risultati</p></div>
+            <div class="project-meta">
+              <h2>HP Fortress — Hybrid Infrastructure Server</h2>
+              <p>Debian 13 · Proxmox / Docker · ZFS Pool · WireGuard Mesh</p>
+            </div>
           </article>
+
+          <!-- Project 2: RBAC Security Console -->
           <article class="project">
-            <a href="#contact" class="project-visual visual-grid" aria-label="Contatta Alessandro">
-              <span class="visual-label">02 / web application</span>
+            <a href="https://github.com/AlexMaina05" target="_blank" rel="noopener noreferrer" class="project-visual visual-grid" aria-label="RBAC Security Console & Entra ID Governance">
+              <img src="assets/images/rbac-console.webp" alt="RBAC Console UI and Auditing Metrics" width="600" height="400" loading="lazy" decoding="async" />
+              <div class="project-visual-overlay"></div>
+              <span class="visual-label">02 / Cloud & Identity Governance</span>
               <span class="visual-arrow">↗</span>
             </a>
-            <div class="project-meta"><h2>App in sviluppo</h2><p>Frontend · Backend · Cloud</p></div>
+            <div class="project-meta">
+              <h2>RBAC Security Console</h2>
+              <p>Microsoft Entra ID · Least Privilege · OAuth2 / OIDC</p>
+            </div>
           </article>
+
+          <!-- Project 3: Comande WebApp -->
           <article class="project">
-            <a href="#contact" class="project-visual visual-type" aria-label="Contatta Alessandro">
-              <span class="visual-label">03 / experiment</span>
+            <a href="https://github.com/AlexMaina05" target="_blank" rel="noopener noreferrer" class="project-visual visual-type" aria-label="Comande WebApp Real-Time Order Management">
+              <img src="assets/images/comande.webp" alt="Comande WebApp Kitchen and Hall Real-time Interface" width="600" height="400" loading="lazy" decoding="async" />
+              <div class="project-visual-overlay"></div>
+              <span class="visual-label">03 / Distributed Application</span>
               <span class="visual-arrow">↗</span>
             </a>
-            <div class="project-meta"><h2>Laboratorio personale</h2><p>Algoritmi · Idee · Esperimenti</p></div>
+            <div class="project-meta">
+              <h2>Comande WebApp</h2>
+              <p>Progressive Web App · Offline-First · Local Sync</p>
+            </div>
+          </article>
+
+          <!-- Project 4: Jamstack Portfolio V3 -->
+          <article class="project project-featured">
+            <a href="https://alexmaina.dev/" target="_blank" rel="noopener" class="project-visual visual-aurora" aria-label="Portfolio V3 Jamstack Architecture on alexmaina.dev">
+              <img src="assets/images/og-preview.webp" alt="Portfolio V3 Next-Gen Jamstack Architecture" width="1200" height="600" loading="lazy" decoding="async" />
+              <div class="project-visual-overlay"></div>
+              <span class="visual-label">04 / Performance & AEO Optimization</span>
+              <span class="visual-arrow">↗</span>
+            </a>
+            <div class="project-meta">
+              <h2>Portfolio V3 Jamstack Architecture</h2>
+              <p>100/100 Core Web Vitals · Schema Graph · Autonomous AI Agent Discovery</p>
+            </div>
           </article>
         </div>
       </section>
-      <section class="about section" id="about"><p class="eyebrow">Profilo</p><div class="about-grid"><h2>Curiosità, metodo e voglia di imparare: è così che affronto il codice.</h2><div class="about-copy"><p>Mi interesso di programmazione, matematica e algoritmi. Sto approfondendo sviluppo web e cloud, condividendo progetti, appunti e piccole idee che crescono con me.</p><ul><li><span>01</span> Ingegneria Informatica</li><li><span>02</span> Web development</li><li><span>03</span> Cloud & DevOps</li></ul></div></div></section>
-      <section class="contact section" id="contact"><p class="eyebrow">Hai un'idea o vuoi collaborare?</p><h2>Scrivimi,<br /><em>volentieri.</em></h2><a class="email-link" href="mailto:maina@alexmaina.dev">maina@alexmaina.dev <span>↗</span></a></section>
+
+      <!-- Knowledge Base Cross-Link Section -->
+      <section class="docs-hub section" id="docs">
+        <div class="section-intro">
+          <p class="eyebrow"><span class="live-dot"></span> Italian Knowledge Base</p>
+          <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); margin: 0.5rem 0 1rem; font-weight: 500;">In-Depth Systems & Cloud Guides</h2>
+          <p>Comprehensive, battle-tested sysadmin and cloud architecture tutorials published on the primary Italian knowledge base (<a href="https://alexmaina.dev/guide/" target="_blank" rel="noopener" style="color: var(--text-color); text-decoration: underline;">alexmaina.dev/guide/</a>).</p>
+        </div>
+        <div class="docs-grid">
+          <a class="doc-card" href="https://alexmaina.dev/ms365/" target="_blank" rel="noopener">
+            <div>
+              <div class="doc-tag">Microsoft Cloud</div>
+              <h3>Microsoft 365 & Copilot Certification Roadmap</h3>
+              <p>Structured syllabus for MS-900, MD-102 Endpoint Administrator, Entra ID IAM, and Intune enterprise compliance policies.</p>
+            </div>
+            <div class="doc-link">Read Guide on alexmaina.dev <span>↗</span></div>
+          </a>
+
+          <a class="doc-card" href="https://alexmaina.dev/configurazione-developer-zerorisk/" target="_blank" rel="noopener">
+            <div>
+              <div class="doc-tag">Windows Server</div>
+              <h3>Zero-Risk Windows Server 2025 Sandbox</h3>
+              <p>Isolated enterprise development environment joined to sandbox Entra ID with zero contamination of the physical workstation.</p>
+            </div>
+            <div class="doc-link">Read Guide on alexmaina.dev <span>↗</span></div>
+          </a>
+
+          <a class="doc-card" href="https://alexmaina.dev/wordpress-su-nas/" target="_blank" rel="noopener">
+            <div>
+              <div class="doc-tag">Containerization</div>
+              <h3>Multi-Instance WordPress on QNAP NAS</h3>
+              <p>Docker container architecture with MariaDB isolation, persistent volumes, and secure reverse proxy routing.</p>
+            </div>
+            <div class="doc-link">Read Guide on alexmaina.dev <span>↗</span></div>
+          </a>
+
+          <a class="doc-card" href="https://alexmaina.dev/guide/" target="_blank" rel="noopener" style="background: rgba(56, 189, 248, 0.05); border-color: rgba(56, 189, 248, 0.2);">
+            <div>
+              <div class="doc-tag" style="color: #38bdf8;">Full Knowledge Hub</div>
+              <h3>Explore All 9 Technical Guides</h3>
+              <p>Python engineering, homelab architectures, cryptography fundamentals, and production deployment tutorials.</p>
+            </div>
+            <div class="doc-link" style="color: #38bdf8;">Browse All Guides <span>↗</span></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <p class="eyebrow">Academic Background & Credentials</p>
+        <div class="about-grid">
+          <h2>Analytical curiosity, engineering rigor, and passion for resilient systems.</h2>
+          <div class="about-copy">
+            <p>I am a Software Developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna (UniBo DISI). My focus spans cloud identity systems (Microsoft 365, Azure, Entra ID), hybrid homelab infrastructure, and modern software architectures.</p>
+            <ul>
+              <li><span>01</span> Computer Engineering @ Alma Mater Studiorum - Università di Bologna</li>
+              <li><span>02</span> Microsoft 365 Certified: Fundamentals (MS-900)</li>
+              <li><span>03</span> Microsoft Certified: Endpoint Administrator Associate (MD-102 Curriculum)</li>
+              <li><span>04</span> Hybrid Homelab Infrastructure (Debian, Proxmox, Docker, ZFS, WireGuard)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <p class="eyebrow">Have a project or want to collaborate?</p>
+        <h2>Let's build something<br /><em>exceptional.</em></h2>
+        <div>
+          <a class="email-link" href="mailto:maina@alexmaina.dev">maina@alexmaina.dev <span>↗</span></a>
+        </div>
+        <div style="margin-top: 2rem;">
+          <a href="https://bio.alexmaina.dev/" target="_blank" rel="noopener" class="availability" style="display: inline-flex; padding: 10px 20px; font-size: 0.9rem;">
+            <span></span> Official Verified Bio & vCard: bio.alexmaina.dev ↗
+          </a>
+        </div>
+      </section>
     </main>
-    <footer><p>© <span id="year"></span> Alessandro Mainardi</p><div><a href="https://github.com/AlexMaina05" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/alessandro-mainardi-ab812823b/" target="_blank" rel="noreferrer">LinkedIn</a></div><p>Made with intent.</p></footer>
-    <script src="script.js"></script>
+
+    <footer>
+      <p>© <span id="year"></span> Alessandro Mainardi</p>
+      <div>
+        <a href="https://github.com/AlexMaina05" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/alessandro-mainardi-ab812823b/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://bio.alexmaina.dev/" target="_blank" rel="noopener">Bio Hub (vCard)</a>
+        <a href="https://alexmaina.dev/" target="_blank" rel="noopener">Italian Site (alexmaina.dev)</a>
+      </div>
+      <p>Engineered with precision.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

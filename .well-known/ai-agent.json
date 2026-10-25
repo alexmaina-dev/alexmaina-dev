@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Alessandro Mainardi AI Agent Profile",
+  "version": "1.0.0",
+  "description": "Agentic discovery metadata for Alessandro Mainardi - Software Developer & Cloud Systems Builder (English Portfolio).",
+  "author": {
+    "name": "Alessandro Mainardi",
+    "email": "maina@alexmaina.dev",
+    "url": "https://alexmaina.dev/#person",
+    "sameAs": [
+      "https://github.com/AlexMaina05",
+      "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
+      "https://orcid.org/0009-0003-7003-7247"
+    ]
+  },
+  "capabilities": {
+    "llms_txt": "https://mainadev.me/llms.txt",
+    "primary_site": "https://alexmaina.dev/",
+    "knowledge_base": "https://alexmaina.dev/guide/",
+    "bio_hub": "https://bio.alexmaina.dev/",
+    "languages": ["en", "it"]
+  }
+}

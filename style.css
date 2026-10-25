@@ -3,6 +3,23 @@
    Minimal, Professional Tech Aesthetic
    ========================================================================== */
 
+/* --- Self-Hosted Local Fonts --- */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('assets/fonts/plusjakartasans.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('assets/fonts/jetbrainsmono.woff2') format('woff2');
+}
+
 :root {
   --bg-color: #000000;
   --bg-panel: #0a0a0a;
@@ -12,7 +29,7 @@
   --border-hover: #444444;
   --accent-color: #ffffff;
   
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
@@ -652,4 +669,101 @@ footer a:hover {
   nav {
     display: none;
   }
+}
+
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  opacity: 0.82;
+}
+
+.project-visual:hover img {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+.project-visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.8) 100%);
+  pointer-events: none;
+}
+
+
+/* ==========================================================================
+   Documentation Hub (Cross-Link to Primary Italian Knowledge Base)
+   ========================================================================== */
+
+.docs-hub {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 1px solid var(--border-color);
+}
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.doc-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.doc-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.doc-card .doc-tag {
+  font: 500 0.72rem var(--font-mono);
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.doc-card h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+  line-height: 1.3;
+}
+
+.doc-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 1.25rem;
+  flex-grow: 1;
+}
+
+.doc-card .doc-link {
+  font: 500 0.8rem var(--font-mono);
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.doc-card .doc-link span {
+  transition: transform 0.2s;
+}
+
+.doc-card:hover .doc-link span {
+  transform: translate(2px, -2px);
 }
