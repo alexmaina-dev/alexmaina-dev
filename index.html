@@ -379,23 +379,6 @@
   ]
 }</script>
   
-    <!-- W3C Speculation Rules API for Instant 0ms Pre-rendering in Modern Browsers -->
-    <script type="speculationrules">
-    {
-      "prefetch": [
-        {
-          "source": "document",
-          "where": {
-            "and": [
-              { "href_matches": "/*" },
-              { "not": { "href_matches": "/assets/*" } }
-            ]
-          },
-          "eagerness": "moderate"
-        }
-      ]
-    }
-    </script>
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
