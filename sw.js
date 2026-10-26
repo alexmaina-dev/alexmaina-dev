@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mainadev-v1.0';
+const CACHE_NAME = 'mainadev-v1.1';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -7,6 +7,8 @@ const STATIC_ASSETS = [
   '/manifest.json',
   '/favicon.ico',
   '/404.html',
+  '/offline.html',
+  '/opensearch.xml',
   '/assets/fonts/plusjakartasans.woff2',
   '/assets/fonts/jetbrainsmono.woff2',
   '/assets/images/homelab.webp',
@@ -57,7 +59,7 @@ self.addEventListener('fetch', (event) => {
         return networkResponse;
       }).catch(() => {
         if (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html')) {
-          return caches.match('/404.html');
+          return caches.match('/offline.html') || caches.match('/404.html');
         }
       });
     })
