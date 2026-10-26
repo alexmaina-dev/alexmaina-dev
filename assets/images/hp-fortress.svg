@@ -1,0 +1,326 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 756" width="1200" height="756">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0e172e"/>
+      <stop offset="55%" stop-color="#080c18"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </radialGradient>
+
+    <!-- Cyan Accent Glow -->
+    <radialGradient id="cyanAmbient" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Chassis Metallic Gradient -->
+    <linearGradient id="chassisMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3346"/>
+      <stop offset="4%" stop-color="#182030"/>
+      <stop offset="96%" stop-color="#121824"/>
+      <stop offset="100%" stop-color="#0b101a"/>
+    </linearGradient>
+
+    <linearGradient id="bezelTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Drive Bay Gradient -->
+    <linearGradient id="driveBay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#151c28"/>
+      <stop offset="100%" stop-color="#0c111a"/>
+    </linearGradient>
+
+    <linearGradient id="driveHandle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f293d"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1f293d"/>
+    </linearGradient>
+
+    <!-- OLED Display Gradient -->
+    <linearGradient id="displayGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002b36"/>
+      <stop offset="100%" stop-color="#02151d"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.35"/>
+      <circle cx="0" cy="0" r="1.2" fill="#00e5ff" fill-opacity="0.25"/>
+    </pattern>
+
+    <!-- Drop Shadows -->
+    <filter id="shadowServer" x="-10%" y="-10%" width="120%" height="135%">
+      <feDropShadow dx="0" dy="25" stdDeviation="35" flood-color="#000000" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#00e5ff" flood-opacity="0.12"/>
+    </filter>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="756" fill="url(#bgGlow)"/>
+  <rect width="1200" height="756" fill="url(#techGrid)"/>
+  <rect width="1200" height="756" fill="url(#cyanAmbient)"/>
+
+  <!-- Server Top Status Banner -->
+  <g transform="translate(150, 85)">
+    <!-- Circuit lines left and right -->
+    <path d="M 0 25 L 220 25 L 245 45 L 300 45" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.4"/>
+    <circle cx="0" cy="25" r="3" fill="#00e5ff"/>
+    <path d="M 900 25 L 680 25 L 655 45 L 600 45" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.4"/>
+    <circle cx="900" cy="25" r="3" fill="#00e5ff"/>
+
+    <!-- Center Badge -->
+    <rect x="310" y="25" width="280" height="36" rx="18" fill="#0b1322" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="332" cy="43" r="5" fill="#10b981" filter="url(#neonGlow)"/>
+    <text x="350" y="48" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="12" font-weight="700" fill="#00e5ff" letter-spacing="2">SYSTEM STATUS: OPTIMAL</text>
+  </g>
+
+  <!-- MAIN RACK CHASSIS (Server 4U Front View) -->
+  <g transform="translate(150, 180)" filter="url(#shadowServer)">
+    <!-- Rack Ears (Left & Right Mount Brackets) -->
+    <!-- Left Rack Ear -->
+    <rect x="-40" y="20" width="40" height="280" rx="4" fill="#1b2434" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="-20" cy="45" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+    <circle cx="-20" cy="95" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+    <circle cx="-20" cy="225" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+    <circle cx="-20" cy="275" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+
+    <!-- Right Rack Ear -->
+    <rect x="900" y="20" width="40" height="280" rx="4" fill="#1b2434" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="920" cy="45" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+    <circle cx="920" cy="95" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+    <circle cx="920" cy="225" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+    <circle cx="920" cy="275" r="6" fill="#0c111a" stroke="#475569" stroke-width="2"/>
+
+    <!-- Main Outer Case -->
+    <rect x="0" y="0" width="900" height="320" rx="10" fill="url(#chassisMetal)" stroke="#38455e" stroke-width="2"/>
+
+    <!-- Top Bezel Highlight Stripe -->
+    <rect x="0" y="0" width="900" height="8" rx="4" fill="url(#bezelTop)" opacity="0.8"/>
+
+    <!-- TOP CONTROL PANEL (Unit Management) -->
+    <rect x="25" y="22" width="850" height="68" rx="8" fill="#0d1422" stroke="#1f2c42" stroke-width="1.5"/>
+
+    <!-- Brand Emblem & Logo -->
+    <g transform="translate(45, 34)">
+      <rect x="0" y="0" width="44" height="44" rx="8" fill="#152033" stroke="#00e5ff" stroke-width="1.5"/>
+      <path d="M 12 12 L 12 32 M 32 12 L 32 32 M 12 22 L 32 22" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+      <text x="56" y="24" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="1">HP FORTRESS</text>
+      <text x="56" y="39" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#00e5ff" letter-spacing="1.5">HYBRID HOMELAB SERVER 24/7</text>
+    </g>
+
+    <!-- Center System OLED Display -->
+    <g transform="translate(390, 31)">
+      <rect x="0" y="0" width="270" height="50" rx="6" fill="url(#displayGlass)" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.6"/>
+      <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">HOST: FORTRESS-NODE-01</text>
+      <text x="14" y="33" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">HYPER-V · DOCKER · REFS</text>
+      <text x="14" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">● SECURE ZERO-TRUST (TAILSCALE)</text>
+    </g>
+
+    <!-- Power & Diagnostic Buttons -->
+    <g transform="translate(805, 36)">
+      <!-- Power button with cyan ring -->
+      <circle cx="20" cy="20" r="16" fill="#152033" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="20" cy="20" r="12" fill="none" stroke="#00e5ff" stroke-width="2" filter="url(#neonGlow)"/>
+      <path d="M 20 12 L 20 20" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="48" cy="14" r="3" fill="#10b981" filter="url(#neonGlow)"/>
+      <circle cx="48" cy="26" r="3" fill="#00e5ff" filter="url(#neonGlow)"/>
+    </g>
+
+    <!-- DRIVE BAYS SECTION (8x High-Performance Enterprise SAS/NVMe Bays) -->
+    <g transform="translate(25, 105)">
+      <!-- Drive Bay 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <!-- Ventilation slits -->
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <!-- Handle latch -->
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 01</text>
+      </g>
+
+      <!-- Drive Bay 2 -->
+      <g transform="translate(108, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 02</text>
+      </g>
+
+      <!-- Drive Bay 3 -->
+      <g transform="translate(216, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 03</text>
+      </g>
+
+      <!-- Drive Bay 4 -->
+      <g transform="translate(324, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 04</text>
+      </g>
+
+      <!-- Drive Bay 5 -->
+      <g transform="translate(432, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 05</text>
+      </g>
+
+      <!-- Drive Bay 6 -->
+      <g transform="translate(540, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 06</text>
+      </g>
+
+      <!-- Drive Bay 7 -->
+      <g transform="translate(648, 0)">
+        <rect x="0" y="0" width="98" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="12" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="22" y1="35" x2="76" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="50" x2="76" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="65" x2="76" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="80" x2="76" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="95" x2="76" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="110" x2="76" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="22" y1="125" x2="76" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="18" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="28" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="38" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="50" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 07</text>
+      </g>
+
+      <!-- Drive Bay 8 -->
+      <g transform="translate(756, 0)">
+        <rect x="0" y="0" width="94" height="190" rx="6" fill="url(#driveBay)" stroke="#222f44" stroke-width="1.5"/>
+        <rect x="10" y="15" width="74" height="130" rx="3" fill="#0a0f18"/>
+        <line x1="20" y1="35" x2="74" y2="35" stroke="#1e293b" stroke-width="2"/>
+        <line x1="20" y1="50" x2="74" y2="50" stroke="#1e293b" stroke-width="2"/>
+        <line x1="20" y1="65" x2="74" y2="65" stroke="#1e293b" stroke-width="2"/>
+        <line x1="20" y1="80" x2="74" y2="80" stroke="#1e293b" stroke-width="2"/>
+        <line x1="20" y1="95" x2="74" y2="95" stroke="#1e293b" stroke-width="2"/>
+        <line x1="20" y1="110" x2="74" y2="110" stroke="#1e293b" stroke-width="2"/>
+        <line x1="20" y1="125" x2="74" y2="125" stroke="#1e293b" stroke-width="2"/>
+        <rect x="16" y="152" width="62" height="18" rx="3" fill="url(#driveHandle)" stroke="#334155" stroke-width="1"/>
+        <circle cx="26" cy="177" r="2.5" fill="#10b981" filter="url(#neonGlow)"/>
+        <circle cx="36" cy="177" r="2.5" fill="#00e5ff" filter="url(#neonGlow)"/>
+        <text x="48" y="180" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">BAY 08</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BOTTOM SPECIFICATIONS / SPECS PILLS -->
+  <g transform="translate(150, 560)">
+    <!-- Spec Card 1: Storage -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="205" height="74" rx="10" fill="#0b111e" stroke="#1e293b" stroke-width="1.5"/>
+      <circle cx="28" cy="37" r="14" fill="#00e5ff" fill-opacity="0.1"/>
+      <path d="M 22 37 L 34 37 M 28 31 L 28 43" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+      <text x="52" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">STORAGE ENGINE</text>
+      <text x="52" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#ffffff">ReFS + Spaces</text>
+    </g>
+
+    <!-- Spec Card 2: Hypervisor -->
+    <g transform="translate(230, 0)">
+      <rect x="0" y="0" width="205" height="74" rx="10" fill="#0b111e" stroke="#1e293b" stroke-width="1.5"/>
+      <circle cx="28" cy="37" r="14" fill="#38bdf8" fill-opacity="0.1"/>
+      <rect x="22" y="31" width="12" height="12" rx="2" fill="none" stroke="#38bdf8" stroke-width="2"/>
+      <text x="52" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">VIRTUALIZATION</text>
+      <text x="52" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Hyper-V Isolated</text>
+    </g>
+
+    <!-- Spec Card 3: Containers -->
+    <g transform="translate(460, 0)">
+      <rect x="0" y="0" width="205" height="74" rx="10" fill="#0b111e" stroke="#1e293b" stroke-width="1.5"/>
+      <circle cx="28" cy="37" r="14" fill="#10b981" fill-opacity="0.1"/>
+      <path d="M 23 37 L 27 41 L 34 33" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">CONTAINER STACK</text>
+      <text x="52" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Docker Compose</text>
+    </g>
+
+    <!-- Spec Card 4: Networking -->
+    <g transform="translate(690, 0)">
+      <rect x="0" y="0" width="210" height="74" rx="10" fill="#0b111e" stroke="#1e293b" stroke-width="1.5"/>
+      <circle cx="28" cy="37" r="14" fill="#a855f7" fill-opacity="0.1"/>
+      <path d="M 23 41 C 28 31, 28 31, 33 41" stroke="#a855f7" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="52" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">ZERO-TRUST VPN</text>
+      <text x="52" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Tailscale Mesh</text>
+    </g>
+  </g>
+
+  <!-- Technical Watermark / Footer Details -->
+  <text x="600" y="700" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" letter-spacing="2">
+    ARCHITECTURE BLUEPRINT · RESILIENT ENTERPRISE HOMELAB · ALAMATER DISI
+  </text>
+</svg>

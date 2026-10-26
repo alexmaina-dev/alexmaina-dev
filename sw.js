@@ -11,6 +11,8 @@ const STATIC_ASSETS = [
   '/opensearch.xml',
   '/assets/fonts/plusjakartasans.woff2',
   '/assets/fonts/jetbrainsmono.woff2',
+  '/assets/images/hp-fortress.webp',
+  '/assets/images/hp-fortress.svg',
   '/assets/images/homelab.webp',
   '/assets/images/rbac-console.webp',
   '/assets/images/og-preview.webp'
