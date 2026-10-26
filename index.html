@@ -53,295 +53,331 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Schema.org JSON-LD Structured Data -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "WebSite",
+      "@id": "https://mainadev.me/#website",
+      "url": "https://mainadev.me/",
+      "name": "Alessandro Mainardi — Software Developer & Cloud Systems",
+      "description": "Official English portfolio of Alessandro Mainardi: Software developer, Computer Engineering student at UniBo, and cloud systems builder.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://alexmaina.dev/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://mainadev.me/#profilepage",
+      "url": "https://mainadev.me/",
+      "name": "Alessandro Mainardi — English Portfolio & Technical Showcase",
+      "isPartOf": {
+        "@id": "https://mainadev.me/#website"
+      },
+      "inLanguage": "en-US",
+      "mainEntity": {
+        "@id": "https://alexmaina.dev/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://alexmaina.dev/#person",
+      "name": "Alessandro Mainardi",
+      "phoneticName": "/ales'sandro mai'nardi/",
+      "url": "https://alexmaina.dev/",
+      "email": "mailto:maina@alexmaina.dev",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "mailto:maina@alexmaina.dev",
+        "contactType": "Technical Inquiries & Cloud Architecture",
+        "availableLanguage": [
+          "English",
+          "Italian"
+        ]
+      },
+      "image": "https://bio.alexmaina.dev/assets/images/profile.webp",
+      "jobTitle": "Software Developer & Computer Engineering Student",
+      "description": "Software developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna (UniBo DISI), specializing in Microsoft 365 & Azure cloud architectures, hybrid server infrastructure, and full-stack development.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Bologna, Italy",
+        "sameAs": "https://www.wikidata.org/wiki/Q1891",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.494887,
+          "longitude": 11.342616
+        }
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "Italy",
+        "sameAs": "https://www.wikidata.org/wiki/Q38"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Alma Mater Studiorum - Università di Bologna",
+        "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
+        "url": "https://www.unibo.it/",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/University_of_Bologna",
+          "https://www.wikidata.org/wiki/Q131262",
+          "https://www.wikidata.org/wiki/Q115783307"
+        ]
+      },
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "Alma Mater Studiorum - Università di Bologna",
+        "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
+        "url": "https://www.unibo.it/",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/University_of_Bologna",
+          "https://www.wikidata.org/wiki/Q131262",
+          "https://www.wikidata.org/wiki/Q115783307"
+        ]
+      },
+      "knowsAbout": [
         {
-          "@type": "WebSite",
-          "@id": "https://mainadev.me/#website",
-          "url": "https://mainadev.me/",
-          "name": "Alessandro Mainardi — Software Developer & Cloud Systems",
-          "description": "Official English portfolio of Alessandro Mainardi: Software developer, Computer Engineering student at UniBo, and cloud systems builder.",
-          "inLanguage": "en-US",
-          "publisher": {
-            "@id": "https://alexmaina.dev/#person"
-          }
+          "@type": "DefinedTerm",
+          "name": "Computer Engineering",
+          "sameAs": "https://www.wikidata.org/wiki/Q43015"
         },
         {
-          "@type": "ProfilePage",
-          "@id": "https://mainadev.me/#profilepage",
-          "url": "https://mainadev.me/",
-          "name": "Alessandro Mainardi — English Portfolio & Technical Showcase",
-          "isPartOf": {
-            "@id": "https://mainadev.me/#website"
-          },
-          "inLanguage": "en-US",
-          "mainEntity": {
-            "@id": "https://alexmaina.dev/#person"
-          }
+          "@type": "DefinedTerm",
+          "name": "Software Architecture",
+          "sameAs": "https://www.wikidata.org/wiki/Q211188"
         },
         {
-          "@type": "Person",
-          "@id": "https://alexmaina.dev/#person",
-          "name": "Alessandro Mainardi",
-          "phoneticName": "/ales'sandro mai'nardi/",
-          "url": "https://alexmaina.dev/",
-          "email": "mailto:maina@alexmaina.dev",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "mailto:maina@alexmaina.dev",
-            "contactType": "Technical Inquiries & Cloud Architecture",
-            "availableLanguage": [
-              "English",
-              "Italian"
-            ]
-          },
-          "image": "https://bio.alexmaina.dev/assets/images/profile.webp",
-          "jobTitle": "Software Developer & Computer Engineering Student",
-          "description": "Software developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna (UniBo DISI), specializing in Microsoft 365 & Azure cloud architectures, hybrid server infrastructure, and full-stack development.",
-          "homeLocation": {
-            "@type": "Place",
-            "name": "Bologna, Italy",
-            "sameAs": "https://www.wikidata.org/wiki/Q1891",
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 44.494887,
-              "longitude": 11.342616
-            }
-          },
-          "nationality": {
-            "@type": "Country",
-            "name": "Italy",
-            "sameAs": "https://www.wikidata.org/wiki/Q38"
-          },
-          "alumniOf": {
+          "@type": "DefinedTerm",
+          "name": "Microsoft 365",
+          "sameAs": "https://www.wikidata.org/wiki/Q11261"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Microsoft Entra ID",
+          "sameAs": "https://www.wikidata.org/wiki/Q6840092"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Cloud Security",
+          "sameAs": "https://www.wikidata.org/wiki/Q483639"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Cloud Architecture",
+          "sameAs": "https://www.wikidata.org/wiki/Q725503"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Docker",
+          "sameAs": "https://www.wikidata.org/wiki/Q15629471"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Hyper-V",
+          "sameAs": "https://www.wikidata.org/wiki/Q1143896"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Tailscale",
+          "sameAs": "https://www.wikidata.org/wiki/Q105634586"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "TypeScript",
+          "sameAs": "https://www.wikidata.org/wiki/Q278932"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Next.js",
+          "sameAs": "https://www.wikidata.org/wiki/Q110822606"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Python",
+          "sameAs": "https://www.wikidata.org/wiki/Q28865"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "ReFS",
+          "sameAs": "https://www.wikidata.org/wiki/Q384070"
+        }
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "English",
+          "alternateName": "en"
+        },
+        {
+          "@type": "Language",
+          "name": "Italian",
+          "alternateName": "it"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "B.Sc. in Computer Engineering (In progress)",
+          "credentialCategory": "degree",
+          "educationalLevel": "Bachelor of Science (B.Sc.)",
+          "recognizedBy": {
             "@type": "EducationalOrganization",
             "name": "Alma Mater Studiorum - Università di Bologna",
-            "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
-            "url": "https://www.unibo.it/",
-            "sameAs": [
-              "https://en.wikipedia.org/wiki/University_of_Bologna",
-              "https://www.wikidata.org/wiki/Q131262",
-              "https://www.wikidata.org/wiki/Q115783307"
-            ]
-          },
-          "affiliation": {
-            "@type": "EducationalOrganization",
-            "name": "Alma Mater Studiorum - Università di Bologna",
-            "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
-            "url": "https://www.unibo.it/",
-            "sameAs": [
-              "https://en.wikipedia.org/wiki/University_of_Bologna",
-              "https://www.wikidata.org/wiki/Q131262",
-              "https://www.wikidata.org/wiki/Q115783307"
-            ]
-          },
-          "knowsAbout": [
-            {
-              "@type": "DefinedTerm",
-              "name": "Computer Engineering",
-              "sameAs": "https://www.wikidata.org/wiki/Q43015"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Software Architecture",
-              "sameAs": "https://www.wikidata.org/wiki/Q211188"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Microsoft 365",
-              "sameAs": "https://www.wikidata.org/wiki/Q11261"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Microsoft Entra ID",
-              "sameAs": "https://www.wikidata.org/wiki/Q6840092"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Cloud Security",
-              "sameAs": "https://www.wikidata.org/wiki/Q483639"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Cloud Architecture",
-              "sameAs": "https://www.wikidata.org/wiki/Q725503"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Docker",
-              "sameAs": "https://www.wikidata.org/wiki/Q15629471"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Hyper-V",
-              "sameAs": "https://www.wikidata.org/wiki/Q1143896"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Tailscale",
-              "sameAs": "https://www.wikidata.org/wiki/Q105634586"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "TypeScript",
-              "sameAs": "https://www.wikidata.org/wiki/Q278932"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Next.js",
-              "sameAs": "https://www.wikidata.org/wiki/Q110822606"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "Python",
-              "sameAs": "https://www.wikidata.org/wiki/Q28865"
-            },
-            {
-              "@type": "DefinedTerm",
-              "name": "ReFS",
-              "sameAs": "https://www.wikidata.org/wiki/Q384070"
-            }
-          ],
-          "knowsLanguage": [
-            {
-              "@type": "Language",
-              "name": "English",
-              "alternateName": "en"
-            },
-            {
-              "@type": "Language",
-              "name": "Italian",
-              "alternateName": "it"
-            }
-          ],
-          "hasCredential": [
-            {
-              "@type": "EducationalOccupationalCredential",
-              "name": "B.Sc. in Computer Engineering (In progress)",
-              "credentialCategory": "degree",
-              "educationalLevel": "Bachelor of Science (B.Sc.)",
-              "recognizedBy": {
-                "@type": "EducationalOrganization",
-                "name": "Alma Mater Studiorum - Università di Bologna",
-                "url": "https://www.unibo.it/"
-              }
-            },
-            {
-              "@type": "EducationalOccupationalCredential",
-              "name": "Microsoft 365 Certified: Fundamentals (MS-900)",
-              "credentialCategory": "certification",
-              "url": "https://learn.microsoft.com/certifications/exams/ms-900/",
-              "recognizedBy": {
-                "@type": "Organization",
-                "name": "Microsoft",
-                "url": "https://www.microsoft.com/"
-              }
-            },
-            {
-              "@type": "EducationalOccupationalCredential",
-              "name": "Microsoft Certified: Endpoint Administrator Associate (MD-102 Curriculum)",
-              "credentialCategory": "certification",
-              "url": "https://learn.microsoft.com/certifications/exams/md-102/",
-              "recognizedBy": {
-                "@type": "Organization",
-                "name": "Microsoft",
-                "url": "https://www.microsoft.com/"
-              }
-            }
-          ],
-          "sameAs": [
-            "https://alexmaina.dev/",
-            "https://bio.alexmaina.dev/",
-            "https://mainadev.me/",
-            "https://github.com/AlexMaina05",
-            "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
-            "https://x.com/Alex_Maina_",
-            "https://www.instagram.com/_alessandro_mainardi_/",
-            "https://www.youtube.com/@Alex_Maina",
-            "https://orcid.org/0009-0003-7003-7247"
-          ]
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://alexmaina.dev/hp-fortress-homelab/#app",
-          "name": "HP Fortress Hybrid Server",
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://alexmaina.dev/assets/images/hp-fortress.webp",
-            "contentUrl": "https://alexmaina.dev/assets/images/hp-fortress.webp",
-            "caption": "HP Fortress Hybrid Homelab Server Chassis",
-            "creator": {
-              "@id": "https://alexmaina.dev/#person"
-            },
-            "copyrightNotice": "© 2026 Alessandro Mainardi"
-          },
-          "description": "24/7 enterprise server on Debian 13 with Proxmox, Docker, ZFS pool, WireGuard mesh, and Zero-Trust tunnels.",
-          "url": "https://alexmaina.dev/hp-fortress-homelab/",
-          "applicationCategory": "ServerApplication",
-          "operatingSystem": "Debian 13, Linux",
-          "runtimePlatform": "Docker, Proxmox, ZFS, WireGuard",
-          "programmingLanguage": [
-            {
-              "@type": "ComputerLanguage",
-              "name": "Bash",
-              "sameAs": "https://www.wikidata.org/wiki/Q61877"
-            }
-          ],
-          "license": "https://opensource.org/licenses/MIT",
-          "codeRepository": "https://github.com/AlexMaina05/hp-fortress-homelab",
-          "author": {
-            "@id": "https://alexmaina.dev/#person"
+            "url": "https://www.unibo.it/"
           }
         },
         {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://github.com/AlexMaina05/rbac-console#app",
-          "name": "RBAC Security Console",
-          "description": "Identity governance & auditing platform for Microsoft 365 & Entra ID enforcing Least-Privilege access.",
-          "url": "https://github.com/AlexMaina05/rbac-console",
-          "applicationCategory": "SecurityApplication",
-          "operatingSystem": "Web, Cloud",
-          "runtimePlatform": "Microsoft 365, Azure Entra ID",
-          "programmingLanguage": [
-            {
-              "@type": "ComputerLanguage",
-              "name": "TypeScript",
-              "sameAs": "https://www.wikidata.org/wiki/Q978185"
-            }
-          ],
-          "license": "https://opensource.org/licenses/MIT",
-          "codeRepository": "https://github.com/AlexMaina05/rbac-console",
-          "author": {
-            "@id": "https://alexmaina.dev/#person"
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft 365 Certified: Fundamentals (MS-900)",
+          "credentialCategory": "certification",
+          "url": "https://learn.microsoft.com/certifications/exams/ms-900/",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Microsoft",
+            "url": "https://www.microsoft.com/"
           }
         },
         {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://github.com/AlexMaina05/auto-se#app",
-          "name": "Officina Control Tower",
-          "description": "Real-time automotive operations platform with job tracking, inventory management, and telemetry logs.",
-          "url": "https://github.com/AlexMaina05/auto-se",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web, Cross-platform",
-          "runtimePlatform": "Next.js, TypeScript, SQLite",
-          "programmingLanguage": [
-            {
-              "@type": "ComputerLanguage",
-              "name": "TypeScript",
-              "sameAs": "https://www.wikidata.org/wiki/Q978185"
-            }
-          ],
-          "license": "https://opensource.org/licenses/MIT",
-          "codeRepository": "https://github.com/AlexMaina05/auto-se",
-          "author": {
-            "@id": "https://alexmaina.dev/#person"
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft Certified: Endpoint Administrator Associate (MD-102 Curriculum)",
+          "credentialCategory": "certification",
+          "url": "https://learn.microsoft.com/certifications/exams/md-102/",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Microsoft",
+            "url": "https://www.microsoft.com/"
           }
+        }
+      ],
+      "sameAs": [
+        "https://alexmaina.dev/",
+        "https://bio.alexmaina.dev/",
+        "https://mainadev.me/",
+        "https://github.com/AlexMaina05",
+        "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
+        "https://x.com/Alex_Maina_",
+        "https://www.instagram.com/_alessandro_mainardi_/",
+        "https://www.youtube.com/@Alex_Maina",
+        "https://orcid.org/0009-0003-7003-7247"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmaina.dev/hp-fortress-homelab/#app",
+      "name": "HP Fortress Hybrid Server",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://alexmaina.dev/assets/images/hp-fortress.webp",
+        "contentUrl": "https://alexmaina.dev/assets/images/hp-fortress.webp",
+        "caption": "HP Fortress Hybrid Homelab Server Chassis",
+        "creator": {
+          "@id": "https://alexmaina.dev/#person"
+        },
+        "copyrightNotice": "© 2026 Alessandro Mainardi"
+      },
+      "description": "24/7 enterprise server on Debian 13 with Proxmox, Docker, ZFS pool, WireGuard mesh, and Zero-Trust tunnels.",
+      "url": "https://alexmaina.dev/hp-fortress-homelab/",
+      "applicationCategory": "ServerApplication",
+      "operatingSystem": "Debian 13, Linux",
+      "runtimePlatform": "Docker, Proxmox, ZFS, WireGuard",
+      "programmingLanguage": [
+        {
+          "@type": "ComputerLanguage",
+          "name": "Bash",
+          "sameAs": "https://www.wikidata.org/wiki/Q61877"
+        }
+      ],
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/AlexMaina05/hp-fortress-homelab",
+      "author": {
+        "@id": "https://alexmaina.dev/#person"
+      },
+      "featureList": [
+        "Hyper-V bare-metal hardware isolation",
+        "Docker Compose microservices orchestration",
+        "Resilient ReFS & Storage Spaces pooling",
+        "Encrypted Zero-Trust mesh network with Tailscale",
+        "24/7 continuous health monitoring"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://github.com/AlexMaina05/rbac-console#app",
+      "name": "RBAC Security Console",
+      "description": "Identity governance & auditing platform for Microsoft 365 & Entra ID enforcing Least-Privilege access.",
+      "url": "https://github.com/AlexMaina05/rbac-console",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Web, Cloud",
+      "runtimePlatform": "Microsoft 365, Azure Entra ID",
+      "programmingLanguage": [
+        {
+          "@type": "ComputerLanguage",
+          "name": "TypeScript",
+          "sameAs": "https://www.wikidata.org/wiki/Q978185"
+        }
+      ],
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/AlexMaina05/rbac-console",
+      "author": {
+        "@id": "https://alexmaina.dev/#person"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://github.com/AlexMaina05/auto-se#app",
+      "name": "Officina Control Tower",
+      "description": "Real-time automotive operations platform with job tracking, inventory management, and telemetry logs.",
+      "url": "https://github.com/AlexMaina05/auto-se",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Cross-platform",
+      "runtimePlatform": "Next.js, TypeScript, SQLite",
+      "programmingLanguage": [
+        {
+          "@type": "ComputerLanguage",
+          "name": "TypeScript",
+          "sameAs": "https://www.wikidata.org/wiki/Q978185"
+        }
+      ],
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/AlexMaina05/auto-se",
+      "author": {
+        "@id": "https://alexmaina.dev/#person"
+      },
+      "featureList": [
+        "Real-time vehicle repair workflow tracking",
+        "Interactive fleet management dashboard",
+        "Modular Next.js and TypeScript architecture",
+        "High-performance embedded SQLite database"
+      ]
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "@id": "https://mainadev.me/#navigation",
+      "name": "Primary Navigation",
+      "hasPart": [
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Home & Showcase",
+          "description": "Featured projects, enterprise homelab, and engineering highlights.",
+          "url": "https://mainadev.me/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Italian Hub",
+          "description": "Official Italian portfolio, technical documentation, and sysadmin guides.",
+          "url": "https://alexmaina.dev/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Bio Hub & vCard",
+          "description": "Official mobile identity card and verified contact credentials.",
+          "url": "https://bio.alexmaina.dev/"
         }
       ]
     }
-    </script>
+  ]
+}</script>
   
     <!-- W3C Speculation Rules API for Instant 0ms Pre-rendering in Modern Browsers -->
     <script type="speculationrules">
