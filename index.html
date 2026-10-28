@@ -54,7 +54,8 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Schema.org JSON-LD Structured Data -->
-    <script type="application/ld+json">{
+    <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -113,6 +114,12 @@
           "propertyID": "Wikidata",
           "value": "Q141886579",
           "url": "https://www.wikidata.org/wiki/Q141886579"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.23692700",
+          "url": "https://doi.org/10.5281/zenodo.23692700"
         }
       ],
       "homeLocation": {
@@ -277,7 +284,9 @@
         "https://www.youtube.com/@Alex_Maina",
         "https://orcid.org/0009-0003-7003-7247",
         "https://www.wikidata.org/wiki/Q141886579",
-        "https://keybase.io/alexmaina"
+        "https://keybase.io/alexmaina",
+        "https://doi.org/10.5281/zenodo.23692700",
+        "https://zenodo.org/records/23692700"
       ]
     },
     {
@@ -395,7 +404,8 @@
       ]
     }
   ]
-}</script>
+}
+  </script>
   
   </head>
   <body>
@@ -462,7 +472,34 @@
           <p>Production-grade hybrid infrastructures, enterprise cloud identity governance, and modern web applications.</p>
         </div>
         <div class="project-grid">
-          <!-- Project 1: HP Fortress -->
+                    <!-- Project 00: RosettaHealth Mobile Edge -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://alexmaina.dev/Health-App/assets/images/rosetta-health.webp" alt="RosettaHealth Mobile Edge Zero-Cloud Architecture" width="600" height="340" loading="lazy" decoding="async" />
+              <div class="project-media-overlay"></div>
+              <span class="project-badge"><span class="status-dot"></span> 00 / HealthTech</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">RosettaHealth Mobile Edge</h3>
+              <p class="project-desc">Semantic interoperability pipeline between HL7 CDA R2 and Apple HealthKit. Zero-Cloud on-device LOINC transcodification, Secure Enclave cryptography, and 40-page A4 technical monograph (DOI: 10.5281/zenodo.23692700).</p>
+              <div class="project-tags">
+                <span>Swift 5.10</span>
+                <span>HealthKit</span>
+                <span>HL7 CDA R2</span>
+                <span>Zero-Cloud</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://alexmaina.dev/Health-App/" target="_blank" rel="noopener" class="project-link-primary">
+                  Monograph &amp; Docs ↗
+                </a>
+                <a href="https://github.com/AlexMaina05/Health-App" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+<!-- Project 1: HP Fortress -->
           <article class="project-card">
             <div class="project-media">
               <img src="assets/images/hp-fortress.webp" alt="HP Fortress Server Infrastructure Architecture" width="600" height="340" loading="eager" decoding="async" />
