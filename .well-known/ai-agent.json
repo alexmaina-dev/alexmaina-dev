@@ -1,22 +1,33 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Alessandro Mainardi AI Agent Profile",
-  "version": "1.0.0",
-  "description": "Agentic discovery metadata for Alessandro Mainardi - Software Developer & Cloud Systems Builder (English Portfolio).",
+  "version": "1.1.0",
+  "description": "Agentic discovery metadata for Alessandro Mainardi - Systems Engineer, Software Developer & Computer Science Researcher (Alma Mater Studiorum - University of Bologna).",
   "author": {
     "name": "Alessandro Mainardi",
     "email": "maina@alexmaina.dev",
     "url": "https://alexmaina.dev/#person",
+    "orcid": "https://orcid.org/0009-0003-7003-7247",
+    "wikidata": "https://www.wikidata.org/wiki/Q141886579",
+    "affiliation": "Alma Mater Studiorum - Università di Bologna (UniBo)",
     "sameAs": [
       "https://github.com/AlexMaina05",
       "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
-      "https://orcid.org/0009-0003-7003-7247"
+      "https://x.com/Alex_Maina_",
+      "https://orcid.org/0009-0003-7003-7247",
+      "https://www.wikidata.org/wiki/Q141886579",
+      "https://doi.org/10.5281/zenodo.23781231"
     ]
   },
   "capabilities": {
     "llms_txt": "https://mainadev.me/llms.txt",
     "primary_site": "https://alexmaina.dev/",
     "knowledge_base": "https://alexmaina.dev/guide/",
+    "rosettaedge": {
+      "url": "https://alexmaina.dev/RosettaEdge/",
+      "monograph_doi": "https://doi.org/10.5281/zenodo.23781231",
+      "spec": "Deterministic zero-cloud mobile-edge interoperability between Italian Electronic Health Records (FSE 2.0 / HL7 CDA R2) and Apple HealthKit / Health Connect"
+    },
     "bio_hub": "https://bio.alexmaina.dev/",
     "languages": ["en", "it"]
   }

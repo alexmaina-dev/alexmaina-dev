@@ -1,24 +1,56 @@
 # Alessandro Mainardi (mainadev.me)
 
-> Official English portfolio and technical showcase of Alessandro Mainardi — Software developer and Computer Engineering student at Alma Mater Studiorum - Università di Bologna (UniBo). Specializing in cloud infrastructure (Microsoft 365, Azure, Entra ID), hybrid homelab systems, and modern web application development.
+> Official English portfolio and technical showcase of Alessandro Mainardi — Software developer and Computer Engineering student at Alma Mater Studiorum - Università di Bologna (UniBo). Specializing in zero-cloud architectures, cloud infrastructure (Microsoft 365, Azure, Entra ID), hybrid homelab systems, and modern web application development.
 
 ## Developer Profile
 - **Full Name**: Alessandro Mainardi
-- **Academic Affiliation**: University of Bologna (DISI - Department of Computer Science and Engineering)
+- **Academic Affiliation**: Alma Mater Studiorum - University of Bologna (DISI - Department of Computer Science and Engineering)
+- **ORCID iD**: [0009-0003-7003-7247](https://orcid.org/0009-0003-7003-7247)
+- **Wikidata Entity**: [Q141886579](https://www.wikidata.org/wiki/Q141886579)
 - **Primary Domain (Italian & Knowledge Base)**: [alexmaina.dev](https://alexmaina.dev/)
 - **English Portfolio**: [mainadev.me](https://mainadev.me/)
 - **Social & vCard Hub**: [bio.alexmaina.dev](https://bio.alexmaina.dev/)
 - **Contact Email**: maina@alexmaina.dev
 - **Certifications**: Microsoft 365 Certified: Fundamentals (MS-900), Endpoint Administrator Associate (MD-102 Curriculum)
 
+## Featured Architecture: RosettaEdge
+- **Showcase Portal**: [RosettaEdge Showcase](https://alexmaina.dev/RosettaEdge/)
+- **Technical Documentation**: [RosettaEdge Interactive Docs](https://alexmaina.dev/RosettaEdge/doc/)
+- **Academic Monograph (44 Pages, ISO A4)**: [Monografia Tecnica Online](https://alexmaina.dev/RosettaEdge/monografia/) | [Download PDF](https://alexmaina.dev/RosettaEdge/rosettaedge-monografia-tecnica.pdf)
+- **Official DOI**: [10.5281/zenodo.23781231](https://doi.org/10.5281/zenodo.23781231)
+- **GitHub Repositories**: [AlexMaina05/RosettaEdge (iOS/watchOS)](https://github.com/AlexMaina05/RosettaEdge) | [AlexMaina05/RosettaEdge-Android](https://github.com/AlexMaina05/RosettaEdge-Android)
+- **Core Innovations**:
+  - *Zero-Cloud Privacy Paradigm:* 100% on-device processing and cryptographic storage via Apple Secure Enclave and Android KeyStore (Full GDPR Art. 9 & Art. 25 compliance).
+  - *Streaming SAX Engine:* Single-pass progressive XML parser with constant memory footprint O(d_max) (~4.2 MB RAM peak), immune to XML entity expansion attacks and OS Jetsam kills.
+  - *Identity Firewall:* Deterministic fuzzy demographic matching pipeline (Jaro-Winkler + Levenshtein, 1.8 ms latency) preventing accidental ingestion of family members' lab results.
+  - *Dual Semantic Pathway:* Vital signs to Apple HealthKit / Health Connect with UCUM unit conversion; clinical lab chemistry preserved in local encrypted SQLite vaults with full FHIR R4 fidelity.
+
 ## Core Technical Projects
 - [HP Fortress Hybrid Server](https://mainadev.me/#work): Debian 13 Trixie, Proxmox/Docker virtualization, redundant ZFS storage pool, WireGuard mesh, and reverse proxying with automated SSL.
 - [RBAC Security Console](https://mainadev.me/#work): Role-based access control auditing and Entra ID governance tool implementing Least Privilege principles.
 - [Officina Control Tower](https://mainadev.me/#work): Automotive workflow tracker and fleet operations platform built with Next.js, TypeScript, and SQLite.
+- [Forge3D CAD](https://3d-model-tau-ebon.vercel.app/): In-browser parametric 3D CAD modeler built with TypeScript, Replicad, and OpenCascade WebAssembly for 3D printing.
 
-## In-Depth Documentation Hub (Italian)
-All comprehensive sysadmin, cloud architecture, and networking guides are hosted on the primary Italian knowledge base:
-- [Microsoft 365 & Copilot Certification Roadmap](https://alexmaina.dev/ms365/): MS-900 and MD-102 practical syllabus.
-- [Zero-Risk Windows Server 2025 Sandbox](https://alexmaina.dev/configurazione-developer-zerorisk/): Safe enterprise testing environment.
-- [Multi-Instance WordPress on QNAP NAS](https://alexmaina.dev/wordpress-su-nas/): Containerized multi-tenant hosting with Container Station.
-- [All Technical Guides](https://alexmaina.dev/guide/): Index of all 9 homelab, development, and systems engineering guides.
+## Comprehensive Engineering Guides & Knowledge Base (20 Guides)
+All in-depth tutorials, system administration blueprints, and cloud security guides are indexed on the main engineering hub [alexmaina.dev/guide/](https://alexmaina.dev/guide/):
+
+1. [Caddy Web Server in Docker with Automated SSL](https://alexmaina.dev/caddy-docker-reverse-proxy-ssl/): Declarative reverse proxy with zero-maintenance Let's Encrypt certificates and native WebSocket routing.
+2. [Cloudflare Tunnel & Docker Zero Trust](https://alexmaina.dev/cloudflare-tunnel-docker-zero-trust/): Expose self-hosted container services securely to the public WAN without open router ports or CGNAT issues.
+3. [Docker Log Rotation with daemon.json](https://alexmaina.dev/docker-log-rotation-daemon-json/): Global daemon configuration preventing disk saturation from runaway json-file logs.
+4. [Proxmox VE & ZFS Mirroring for Homelab](https://alexmaina.dev/proxmox-zfs-backup-homelab/): Enterprise storage resilience, deterministic snapshots, remote replication, and 3-2-1 backup strategy.
+5. [SQLCipher on Mobile with Local Hardware Encryption](https://alexmaina.dev/sqlcipher-mobile-crittografia-locale/): AES-256 encrypted SQLite database on iOS and Android with Secure Enclave and KeyStore key derivation.
+6. [Resolve AADSTS50011 Redirect URI Mismatch in Entra ID](https://alexmaina.dev/entra-id-redirect-uri-aadsts50011/): OAuth2/OIDC troubleshooting with MSAL, Single Page Apps, PKCE, and localhost configurations.
+7. [Automated M365 E5 Developer Subscription Renewal](https://alexmaina.dev/m365-developer-rinnovo-automatico/): GitHub Actions automated keep-alive pipeline using Microsoft Graph API to prevent sandbox expiration.
+8. [Modern Python with uv & Ultra-Fast CI/CD](https://alexmaina.dev/python-uv-github-actions/): Replacing pip and poetry with Astral uv, deterministic uv.lock, and 3-second GitHub Actions builds.
+9. [QNAP Container Station: Port 80/443 Conflicts & Reverse Proxy](https://alexmaina.dev/qnap-docker-reverse-proxy/): Freeing system ports occupied by QTS, deploying Nginx Proxy Manager, and automated SSL.
+10. [Tailscale Subnet Router & Pi-hole Anti-CGNAT](https://alexmaina.dev/tailscale-pihole-homelab-cgnat/): Encrypted remote access to all homelab nodes without port forwarding across Carrier-Grade NAT.
+11. [Fixing "Too Many Redirects" Loop in WordPress Docker](https://alexmaina.dev/wordpress-docker-redirect-loop/): SSL offloading diagnosis, HTTP_X_FORWARDED_PROTO header, reverse proxy configuration, and Cloudflare Flexible fix.
+12. [Microsoft 365, Copilot & Azure Certification Roadmap](https://alexmaina.dev/ms365/): Study curriculum and hands-on preparation for MS-900, MD-102, MS-102, and Entra ID.
+13. [Zero-Risk Developer Sandbox Configuration](https://alexmaina.dev/configurazione-developer-zerorisk/): Sandboxed workstation architecture for M365 E5 dev tenants, hypervisor isolation, and BitLocker immunization.
+14. [Complete Modern Python Programming Guide (3.12+)](https://alexmaina.dev/guida_python/): From fundamentals to OOP, virtual environments, type annotations, and modern clean-code standards.
+15. [Cybersecurity & Privacy Hygiene Manual](https://alexmaina.dev/sicurezza/): Multi-Factor Authentication (MFA), Passkeys (FIDO2/WebAuthn), password managers, and endpoint hardening.
+16. [Containerized WordPress on QNAP NAS](https://alexmaina.dev/wordpress-su-nas/): Self-hosted WordPress with MariaDB/MySQL storage on local ReFS/ZFS pools.
+17. [Static Site Architecture with GitHub Pages](https://alexmaina.dev/guida_sito/): Jamstack publishing, Web Vitals performance tuning, custom DNS, and automated CI/CD.
+18. [Modular JavaScript Calculator](https://alexmaina.dev/guida_calculator/): Reactive DOM UI, tokenized mathematical parser, and zero unsafe eval.
+19. [2D Pong Canvas Game in Vanilla JavaScript](https://alexmaina.dev/guida_pong/): 60 FPS update-render game loop, vector physics, and AABB collision detection.
+20. [Markdown & GitHub Flavored Markdown Specification](https://alexmaina.dev/guida_markdown/): CommonMark and GFM specification for clean developer documentation.
