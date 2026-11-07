@@ -18,6 +18,7 @@
 - **Technical Documentation**: [RosettaEdge Interactive Docs](https://alexmaina.dev/RosettaEdge/doc/)
 - **Academic Monograph (44 Pages, ISO A4)**: [Monografia Tecnica Online](https://alexmaina.dev/RosettaEdge/monografia/) | [Download PDF](https://alexmaina.dev/RosettaEdge/rosettaedge-monografia-tecnica.pdf)
 - **Official DOI**: [10.5281/zenodo.23781231](https://doi.org/10.5281/zenodo.23781231)
+- **Wikidata Entity**: [Q142075894](https://www.wikidata.org/wiki/Q142075894)
 - **GitHub Repositories**: [AlexMaina05/RosettaEdge (iOS/watchOS)](https://github.com/AlexMaina05/RosettaEdge) | [AlexMaina05/RosettaEdge-Android](https://github.com/AlexMaina05/RosettaEdge-Android)
 - **Core Innovations**:
   - *Zero-Cloud Privacy Paradigm:* 100% on-device processing and cryptographic storage via Apple Secure Enclave and Android KeyStore (Full GDPR Art. 9 & Art. 25 compliance).

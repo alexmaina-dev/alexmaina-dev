@@ -26,6 +26,7 @@
     "rosettaedge": {
       "url": "https://alexmaina.dev/RosettaEdge/",
       "monograph_doi": "https://doi.org/10.5281/zenodo.23781231",
+      "wikidata": "https://www.wikidata.org/wiki/Q142075894",
       "spec": "Deterministic zero-cloud mobile-edge interoperability between Italian Electronic Health Records (FSE 2.0 / HL7 CDA R2) and Apple HealthKit / Health Connect"
     },
     "bio_hub": "https://bio.alexmaina.dev/",
