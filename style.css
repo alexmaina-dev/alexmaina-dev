@@ -37,6 +37,24 @@
   box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 1rem;
+  background: var(--accent-color, #ffffff);
+  color: var(--bg-color, #000000);
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 4px;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid #38bdf8;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -856,7 +874,9 @@ footer a:hover {
     gap: 2rem;
   }
   nav {
-    display: none;
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.825rem;
   }
 }
 
