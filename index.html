@@ -84,22 +84,20 @@
       "@type": "Person",
       "@id": "https://alexmaina.dev/#person",
       "name": "Alessandro Mainardi",
+      "image": "https://alexmaina.dev/assets/images/profile.webp",
       "phoneticName": "/ales'sandro mai'nardi/",
-      "url": "https://alexmaina.dev/",
       "email": "mailto:maina@alexmaina.dev",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "mailto:maina@alexmaina.dev",
-        "contactType": "Technical Inquiries & Cloud Architecture",
+        "contactType": "Technical Inquiries & Architecture Collaboration",
         "availableLanguage": [
-          "English",
-          "Italian"
+          "Italian",
+          "English"
         ]
       },
-      "image": "https://bio.alexmaina.dev/assets/images/profile.webp",
-      "jobTitle": "Software Developer & Computer Engineering Student",
-      "description": "Software developer and Computer Engineering student at Alma Mater Studiorum - University of Bologna (UniBo DISI), specializing in Microsoft 365 & Azure cloud architectures, hybrid server infrastructure, and full-stack development.",
-      "disambiguatingDescription": "Software developer and Computer Engineering student at University of Bologna (DISI UniBo, ORCID: 0009-0003-7003-7247, Wikidata: Q141886579); not to be confused with the Italian comic writer or the tax lawyer of the same name.",
+      "description": "Software Developer e studente di Ingegneria Informatica all'Alma Mater Studiorum - Università di Bologna (UniBo), specializzato in architetture cloud Microsoft 365 ed Azure, infrastrutture server ibride e sviluppo full-stack.",
+      "disambiguatingDescription": "Software developer e studente di Ingegneria Informatica all'Università di Bologna (DISI UniBo, ORCID: 0009-0003-7003-7247, Wikidata: Q141886579); da non confondere con l'avvocato tributarista o lo sceneggiatore di fumetti omonimi.",
       "identifier": [
         {
           "@type": "PropertyValue",
@@ -114,37 +112,52 @@
           "url": "https://www.wikidata.org/wiki/Q141886579"
         }
       ],
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Bologna, Italy",
-        "sameAs": "https://www.wikidata.org/wiki/Q1891",
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 44.494887,
-          "longitude": 11.342616
-        }
-      },
-      "nationality": {
-        "@type": "Country",
-        "name": "Italy",
-        "sameAs": "https://www.wikidata.org/wiki/Q38"
-      },
+      "url": "https://alexmaina.dev/",
+      "jobTitle": "Software Developer & Computer Engineering Student",
       "affiliation": {
         "@type": "EducationalOrganization",
         "name": "Alma Mater Studiorum - Università di Bologna",
-        "department": "Dipartimento di Informatica - Scienza e Ingegneria (DISI)",
-        "url": "https://www.unibo.it/",
+        "department": {
+          "@type": "EducationalOrganization",
+          "name": "DISI - Dipartimento di Informatica - Scienza e Ingegneria",
+          "url": "https://disi.unibo.it/"
+        },
+        "url": "https://www.unibo.it",
         "sameAs": [
           "https://en.wikipedia.org/wiki/University_of_Bologna",
-          "https://www.wikidata.org/wiki/Q131262",
-          "https://www.wikidata.org/wiki/Q115783307"
+          "https://www.wikidata.org/wiki/Q131262"
         ]
       },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Software Developer & Cloud Infrastructure Specialist",
+        "occupationalCategory": "15-1252.00",
+        "skills": "Microsoft 365, Azure Entra ID, Hyper-V, Docker, Windows Server 2025, ReFS, Tailscale Zero-Trust, Python, TypeScript"
+      },
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "Italian",
+          "alternateName": "it",
+          "sameAs": "https://www.wikidata.org/wiki/Q652"
+        },
+        {
+          "@type": "Language",
+          "name": "English",
+          "alternateName": "en",
+          "sameAs": "https://www.wikidata.org/wiki/Q1860"
+        }
+      ],
       "knowsAbout": [
         {
           "@type": "DefinedTerm",
           "name": "Computer Engineering",
           "sameAs": "https://www.wikidata.org/wiki/Q428691"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Software Engineering",
+          "sameAs": "https://www.wikidata.org/wiki/Q80993"
         },
         {
           "@type": "DefinedTerm",
@@ -158,23 +171,43 @@
         },
         {
           "@type": "DefinedTerm",
+          "name": "Microsoft Azure",
+          "sameAs": "https://www.wikidata.org/wiki/Q725967"
+        },
+        {
+          "@type": "DefinedTerm",
           "name": "Microsoft Entra ID",
           "sameAs": "https://www.wikidata.org/wiki/Q24833870"
         },
         {
           "@type": "DefinedTerm",
-          "name": "Cloud Security",
-          "sameAs": "https://www.wikidata.org/wiki/Q725967"
+          "name": "Hybrid Cloud",
+          "sameAs": "https://www.wikidata.org/wiki/Q109686832"
         },
         {
           "@type": "DefinedTerm",
-          "name": "Cloud Architecture",
-          "sameAs": "https://www.wikidata.org/wiki/Q846636"
+          "name": "Zero Trust Architecture",
+          "sameAs": "https://www.wikidata.org/wiki/Q104852562"
         },
         {
           "@type": "DefinedTerm",
           "name": "Docker",
           "sameAs": "https://www.wikidata.org/wiki/Q15206305"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Proxmox Virtual Environment",
+          "sameAs": "https://www.wikidata.org/wiki/Q344376"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "ZFS",
+          "sameAs": "https://www.wikidata.org/wiki/Q136113"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Caddy (web server)",
+          "sameAs": "https://www.wikidata.org/wiki/Q24008327"
         },
         {
           "@type": "DefinedTerm",
@@ -184,7 +217,47 @@
         {
           "@type": "DefinedTerm",
           "name": "Tailscale",
-          "sameAs": "https://www.wikidata.org/wiki/Q108766392"
+          "sameAs": "https://www.wikidata.org/wiki/Q141088012"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "WireGuard",
+          "sameAs": "https://www.wikidata.org/wiki/Q28975568"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "SQLite",
+          "sameAs": "https://www.wikidata.org/wiki/Q319417"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "SQLCipher",
+          "sameAs": "https://www.wikidata.org/wiki/Q62865069"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Apple Health",
+          "sameAs": "https://www.wikidata.org/wiki/Q19863865"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Health Level 7 (HL7)",
+          "sameAs": "https://www.wikidata.org/wiki/Q327718"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Fast Healthcare Interoperability Resources (FHIR)",
+          "sameAs": "https://www.wikidata.org/wiki/Q19597236"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Logical Observation Identifiers Names and Codes (LOINC)",
+          "sameAs": "https://www.wikidata.org/wiki/Q502480"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Python",
+          "sameAs": "https://www.wikidata.org/wiki/Q28865"
         },
         {
           "@type": "DefinedTerm",
@@ -198,33 +271,45 @@
         },
         {
           "@type": "DefinedTerm",
-          "name": "Python",
-          "sameAs": "https://www.wikidata.org/wiki/Q28865"
-        },
-        {
-          "@type": "DefinedTerm",
           "name": "ReFS",
           "sameAs": "https://www.wikidata.org/wiki/Q1445119"
         }
       ],
-      "knowsLanguage": [
-        {
-          "@type": "Language",
-          "name": "English",
-          "alternateName": "en"
-        },
-        {
-          "@type": "Language",
-          "name": "Italian",
-          "alternateName": "it"
-        }
+      "sameAs": [
+        "https://alexmaina.dev",
+        "https://bio.alexmaina.dev",
+        "https://mainadev.me",
+        "https://github.com/AlexMaina05",
+        "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
+        "https://x.com/Alex_Maina_",
+        "https://www.instagram.com/_alessandro_mainardi_",
+        "https://www.youtube.com/@Alex_Maina",
+        "https://orcid.org/0009-0003-7003-7247",
+        "https://www.wikidata.org/wiki/Q141886579",
+        "https://keybase.io/alexmaina"
       ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bologna",
+        "addressRegion": "BO",
+        "addressCountry": "IT"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Bologna, Italy",
+        "sameAs": "https://www.wikidata.org/wiki/Q1891",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.494887,
+          "longitude": 11.342616
+        }
+      },
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
-          "name": "B.Sc. in Computer Engineering (In progress)",
+          "name": "Corso di Laurea in Ingegneria Informatica (Classe L-8 Ingegneria dell'Informazione) — In Corso",
           "credentialCategory": "degree",
-          "educationalLevel": "Bachelor of Science (B.Sc.)",
+          "educationalLevel": "Bachelor of Science (B.Sc. Candidate) - In Corso",
           "recognizedBy": {
             "@type": "EducationalOrganization",
             "name": "Alma Mater Studiorum - Università di Bologna",
@@ -239,7 +324,7 @@
           "recognizedBy": {
             "@type": "Organization",
             "name": "Microsoft",
-            "url": "https://www.microsoft.com/"
+            "url": "https://www.microsoft.com"
           }
         },
         {
@@ -250,21 +335,89 @@
           "recognizedBy": {
             "@type": "Organization",
             "name": "Microsoft",
-            "url": "https://www.microsoft.com/"
+            "url": "https://www.microsoft.com"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub (Specializzazione AZ-600)",
+          "credentialCategory": "certification",
+          "url": "https://alexmaina.dev/corso-az-600-azure-stack-hub-hybrid-cloud/",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Microsoft",
+            "url": "https://www.microsoft.com"
           }
         }
       ],
-      "sameAs": [
-        "https://alexmaina.dev/",
-        "https://bio.alexmaina.dev/",
-        "https://mainadev.me/",
-        "https://github.com/AlexMaina05",
-        "https://www.linkedin.com/in/alessandro-mainardi-ab812823b/",
-        "https://x.com/Alex_Maina_",
-        "https://www.instagram.com/_alessandro_mainardi_/",
-        "https://orcid.org/0009-0003-7003-7247",
-        "https://www.wikidata.org/wiki/Q141886579",
-        "https://keybase.io/alexmaina"
+      "givenName": "Alessandro",
+      "familyName": "Mainardi",
+      "subjectOf": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://alexmaina.dev/about/#profilepage",
+          "name": "Chi Sono | Alessandro Mainardi",
+          "url": "https://alexmaina.dev/about/"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://bio.alexmaina.dev/#hub",
+          "name": "Alessandro Mainardi — Official Identity Hub",
+          "url": "https://bio.alexmaina.dev/"
+        }
+      ],
+      "gender": "https://schema.org/Male",
+      "nationality": {
+        "@type": "Country",
+        "name": "Italy",
+        "sameAs": "https://www.wikidata.org/wiki/Q38"
+      },
+      "publishingPrinciples": "https://alexmaina.dev/privacy/",
+      "mainEntityOfPage": "https://alexmaina.dev/#person",
+      "creator": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://alexmaina.dev/RosettaEdge/#software",
+          "name": "RosettaEdge — Mobile Edge Zero-Cloud"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://alexmaina.dev/#software-hp-fortress",
+          "name": "HP Fortress Windows Server Automation"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://alexmaina.dev/#software-rbac-console",
+          "name": "Entra ID RBAC Management Console"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://alexmaina.dev/#software-officina-control-tower",
+          "name": "Officina Control Tower"
+        }
+      ],
+      "author": [
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://alexmaina.dev/RosettaEdge/#monografia",
+          "name": "RosettaEdge Monografia Tecnica FSE 2.0 & Apple HealthKit"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Alma Mater Studiorum - Università di Bologna",
+          "department": {
+            "@type": "EducationalOrganization",
+            "name": "DISI - Dipartimento di Informatica - Scienza e Ingegneria",
+            "url": "https://disi.unibo.it/"
+          },
+          "url": "https://www.unibo.it/",
+          "sameAs": [
+            "https://en.wikipedia.org/wiki/University_of_Bologna",
+            "https://www.wikidata.org/wiki/Q131262"
+          ]
+        }
       ]
     },
     {
@@ -406,7 +559,7 @@
     }
   ]
 }
-  </script>
+</script>
   
   </head>
   <body>
