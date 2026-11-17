@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mainadev-v1.2';
+const CACHE_NAME = 'mainadev-v1.3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -45,10 +45,13 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== location.origin) return;
 
-  // Navigation requests: Network First, fallback to cache, then offline.html
+  // Navigation requests: Network First with 3.5s timeout for resilient offline fallback
   if (event.request.mode === 'navigate') {
     event.respondWith(
-      fetch(event.request)
+      Promise.race([
+        fetch(event.request),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Network timeout')), 3500))
+      ])
         .then((response) => {
           if (response && response.status === 200) {
             const clone = response.clone();
@@ -65,22 +68,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets: Cache First with network revalidation
+  // Static assets: Stale-While-Revalidate
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request).then((networkResponse) => {
-        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-          return networkResponse;
+      const fetchPromise = fetch(event.request).then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
         }
-        const responseToCache = networkResponse.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseToCache);
-        });
         return networkResponse;
-      });
+      }).catch(() => {/* Offline fallback */});
+
+      return cachedResponse || fetchPromise;
     })
   );
 });
