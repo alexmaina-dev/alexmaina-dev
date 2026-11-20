@@ -379,35 +379,6 @@
       },
       "publishingPrinciples": "https://alexmaina.dev/privacy/",
       "mainEntityOfPage": "https://alexmaina.dev/#person",
-      "creator": [
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://alexmaina.dev/RosettaEdge/#software",
-          "name": "RosettaEdge — Mobile Edge Zero-Cloud"
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://alexmaina.dev/#software-hp-fortress",
-          "name": "HP Fortress Windows Server Automation"
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://alexmaina.dev/#software-rbac-console",
-          "name": "Entra ID RBAC Management Console"
-        },
-        {
-          "@type": "SoftwareSourceCode",
-          "@id": "https://alexmaina.dev/#software-officina-control-tower",
-          "name": "Officina Control Tower"
-        }
-      ],
-      "author": [
-        {
-          "@type": "ScholarlyArticle",
-          "@id": "https://alexmaina.dev/RosettaEdge/#monografia",
-          "name": "RosettaEdge Monografia Tecnica FSE 2.0 & Apple HealthKit"
-        }
-      ],
       "memberOf": [
         {
           "@type": "EducationalOrganization",
@@ -519,7 +490,9 @@
       "@id": "https://alexmaina.dev/RosettaEdge/#software",
       "name": "RosettaEdge",
       "alternateName": "RosettaEdge iOS/watchOS",
-      "isBasedOn": { "@id": "https://alexmaina.dev/RosettaEdge/#monografia" },
+      "isBasedOn": {
+        "@id": "https://alexmaina.dev/RosettaEdge/#monografia"
+      },
       "applicationCategory": "HealthApplication",
       "operatingSystem": "iOS 17+, watchOS 10+",
       "url": "https://alexmaina.dev/RosettaEdge/",
@@ -535,7 +508,13 @@
         "Bidirectional HL7 CDA R2 to HealthKit transcoding",
         "Deterministic local validation against LOINC & UCUM",
         "AES-256-GCM encrypted persistence with biometric access"
-      ]
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      }
     },
     {
       "@type": "SiteNavigationElement",
