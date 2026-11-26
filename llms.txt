@@ -11,20 +11,20 @@
 - **English Portfolio**: [mainadev.me](https://mainadev.me/)
 - **Social & vCard Hub**: [bio.alexmaina.dev](https://bio.alexmaina.dev/)
 - **Contact Email**: maina@alexmaina.dev
-- **Certifications**: Microsoft 365 Certified: Fundamentals (MS-900), Endpoint Administrator Associate (MD-102 Curriculum)
+- **Certifications**: Microsoft 365 Certified: Fundamentals (MS-900); completed study & lab curricula in Endpoint Administration (MD-102) and Azure Stack Hub Hybrid Cloud (AZ-600)
 
 ## Featured Architecture: RosettaEdge
 - **Showcase Portal**: [RosettaEdge Showcase](https://alexmaina.dev/RosettaEdge/)
 - **Technical Documentation**: [RosettaEdge Interactive Docs](https://alexmaina.dev/RosettaEdge/doc/)
-- **Academic Monograph (44 Pages, ISO A4)**: [Monografia Tecnica Online](https://alexmaina.dev/RosettaEdge/monografia/) | [Download PDF](https://alexmaina.dev/RosettaEdge/rosettaedge-monografia-tecnica.pdf)
+- **Independent Technical Monograph (44 Pages, ISO A4)**: [Monografia Tecnica Online](https://alexmaina.dev/RosettaEdge/monografia/) | [Download PDF](https://alexmaina.dev/RosettaEdge/rosettaedge-monografia-tecnica.pdf)
 - **Official DOI**: [10.5281/zenodo.23781231](https://doi.org/10.5281/zenodo.23781231)
 - **Wikidata Entity**: [Q142075894](https://www.wikidata.org/wiki/Q142075894)
-- **GitHub Repositories**: [AlexMaina05/RosettaEdge (iOS/watchOS)](https://github.com/AlexMaina05/RosettaEdge) | [AlexMaina05/RosettaEdge-Android](https://github.com/AlexMaina05/RosettaEdge-Android)
+- **GitHub Repository**: [AlexMaina05/RosettaEdge (iOS/watchOS)](https://github.com/AlexMaina05/RosettaEdge)
 - **Core Innovations**:
-  - *Zero-Cloud Privacy Paradigm:* 100% on-device processing and cryptographic storage via Apple Secure Enclave and Android KeyStore (Full GDPR Art. 9 & Art. 25 compliance).
+  - *Zero-Cloud Privacy Paradigm:* 100% on-device processing and cryptographic storage via Apple Secure Enclave (Full GDPR Art. 9 & Art. 25 compliance).
   - *Streaming SAX Engine:* Single-pass progressive XML parser with constant memory footprint O(d_max) (~4.2 MB RAM peak), immune to XML entity expansion attacks and OS Jetsam kills.
   - *Identity Firewall:* Deterministic fuzzy demographic matching pipeline (Jaro-Winkler + Levenshtein, 1.8 ms latency) preventing accidental ingestion of family members' lab results.
-  - *Dual Semantic Pathway:* Vital signs to Apple HealthKit / Health Connect with UCUM unit conversion; clinical lab chemistry preserved in local encrypted SQLite vaults with full FHIR R4 fidelity.
+  - *Dual Semantic Pathway:* Vital signs to Apple HealthKit with UCUM unit conversion; clinical lab chemistry preserved in local encrypted SwiftData vaults with full FHIR R4 fidelity.
 
 ## Core Technical Projects
 - [HP Fortress Hybrid Server](https://mainadev.me/#work): Windows Server 2025 Datacenter, Hyper-V virtualization, Storage Spaces ReFS pool, Tailscale mesh VPN, and automated cloud backup.

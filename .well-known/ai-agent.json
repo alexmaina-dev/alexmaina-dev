@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Alessandro Mainardi AI Agent Profile",
   "version": "1.1.0",
-  "description": "Agentic discovery metadata for Alessandro Mainardi - Systems Engineer, Software Developer & Computer Science Researcher (Alma Mater Studiorum - University of Bologna).",
+  "description": "Agentic discovery metadata for Alessandro Mainardi - Software Developer & Computer Engineering Student (Alma Mater Studiorum - University of Bologna).",
   "author": {
     "name": "Alessandro Mainardi",
     "email": "maina@alexmaina.dev",
@@ -26,7 +26,7 @@
       "url": "https://alexmaina.dev/RosettaEdge/",
       "monograph_doi": "https://doi.org/10.5281/zenodo.23781231",
       "wikidata": "https://www.wikidata.org/wiki/Q142075894",
-      "spec": "Deterministic zero-cloud mobile-edge interoperability between Italian Electronic Health Records (FSE 2.0 / HL7 CDA R2) and Apple HealthKit / Health Connect"
+      "spec": "Deterministic zero-cloud mobile-edge interoperability between Italian Electronic Health Records (FSE 2.0 / HL7 CDA R2) and Apple HealthKit"
     },
     "bio_hub": "https://bio.alexmaina.dev/",
     "languages": ["en", "it"]
